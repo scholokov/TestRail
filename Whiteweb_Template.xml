@@ -9,6 +9,10 @@
 		<description></description>
 										<sections>
 		<section>
+		<name>Full Mockup Test</name>
+		<description></description>
+										<sections>
+		<section>
 		<name>Common</name>
 		<description></description>
 						
@@ -299,6 +303,171 @@
 												
 						<case>
 				<id>C1033</id>
+				<title>Проверка корректности отображения всех элементов при смене размеров окна (Фоны растягиваются под ширину экрана, а контент подстраивается)</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate>240</estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+								</cases>
+							</section>
+	</sections>
+			</section>
+	</sections>
+			</section>
+			<section>
+		<name>Light Mockup Test</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Контент</name>
+		<description></description>
+						
+		<cases>
+									
+						<case>
+				<id>C1174</id>
+				<title>Расположение блоков должно быть 1:1 по сравнению с макетом</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate>1800</estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1175</id>
+				<title>Отсутствуют видимые глазу проблемы: поломанные блоки, не состыковки цвета и т.п.</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate>1200</estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1176</id>
+				<title>Устанавливается ли фокус в поля форм</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate>180</estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1177</id>
+				<title>Кликабильные элементы должны иметь указатель &quot;курсор&quot;, перетаскивающиеся - &quot;лапка&quot; или &quot;ресайз&quot;, активные/недоступные - курсор default</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate>240</estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1178</id>
+				<title>Нормально ли подсвечиваются поля в фокусе</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate>180</estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1179</id>
+				<title>Нормально ли подсвечиваются поля с ошибками</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate>180</estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1180</id>
+				<title>Проверить что все анимации элементов страницы отрабатывают согласно ТЗ</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate>480</estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1181</id>
+				<title>Все текста не должны обрезаться и содержать ошибок</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate>480</estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1182</id>
+				<title>При смене размера страницы текста автоматически подстраиваются и всегда видны</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate>600</estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>Адаптивность</name>
+		<description></description>
+						
+		<cases>
+									
+						<case>
+				<id>C1183</id>
+				<title>Не должна появляться горизонтальная прокрутка для оговоренных в ТЗ разрешениях</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate>120</estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1184</id>
 				<title>Проверка корректности отображения всех элементов при смене размеров окна (Фоны растягиваются под ширину экрана, а контент подстраивается)</title>
 												<template>Test Case (Text)</template>
 																<type>Other</type>
