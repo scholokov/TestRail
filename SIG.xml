@@ -1,0 +1,2463 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite>
+	<id>S20</id>
+	<name>SIG</name>
+	<description></description>
+	<sections>
+		<section>
+		<name>Alexa Sh.</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>root</name>
+		<description></description>
+						
+		<cases>
+									
+						<case>
+				<id>C1076</id>
+				<title>Adding new groups</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>User has logged in.
+Open &quot;Main page&quot;. Сlick to the buttom &quot;Groups&quot;. ![](index.php?/attachments/get/42)
+
+The tab &quot;Groups&quot; is opened. ![](index.php?/attachments/get/43)
+</preconds>
+										<steps>Click to the first drop-down line. Choose one device from the list.
+Type the name of the group (you can use сyrillic and latin alphabets, numbers or special characters).
+Сlick to the third line &quot;Select number&quot;, choose free number (number without a group) from the drop-down.
+Сlick &quot;Tick&quot; (✓).</steps>
+										<expected>After ticking you see tab &quot;Groups&quot; and your new group in it.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1077</id>
+				<title>Registration</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Open application SIG. User must be logged out.</preconds>
+										<steps>1. Click the buttom &quot;Sign up&quot;. You see the form of registration.
+2. Type the name (you can use сyrillic and latin alphabets, numbers or special characters no more than 150).
+3. Type number that was not used in this application in a line &quot;Phone&quot; (no more than 13 symbols). Press &quot;+&quot; and add one other number. 
+4. Type email that was not used in this application in a line &quot;Email&quot; (latin alphabets &amp; &quot;@&quot;). Press &quot;+&quot; and add one other email. 
+5. Type the password (you can use сyrillic and latin alphabets, numbers or special characters not less than 4 and no more than 150).
+6. Сlick &quot;Tick&quot; (✓) in a line &quot;I agree to rerms.
+7. Click the active buttom &quot;Sign in&quot;.</steps>
+										<expected>You are registered and logged in. You see main page.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1078</id>
+				<title>Adding new subgroups &quot;Zone&quot; or &quot;Key&quot;</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>User has logged in. Open &quot;Main page&quot;. Сlick to the buttom &quot;Groups&quot;. Click on one group. Click on the buttom &quot;Subgroups&quot;.</preconds>
+										<steps>1. Click to &quot;+&quot; buttom. You see register form for the subgroup.
+2. Type the name (you can use сyrillic and latin alphabets, numbers or special characters no more than 100).
+3. Click to the drop-down &quot;Output&quot;. Choose one type: &quot;Zone&quot; or &quot;Key&quot;.
+4. Select the number for subgroup (no more than 8 for &quot;Key&quot; and 16 for &quot;Zone&quot;).
+5. Сlick &quot;Tick&quot; (✓).</steps>
+										<expected>The subgroup is created. You see the list of all subgroupos of this group.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1079</id>
+				<title>Adding new uncontrolled subgroup &quot;Exit&quot; type</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>User has logged in. Open &quot;Main page&quot;. Сlick to the buttom &quot;Groups&quot;. Click on one group. Click on the buttom &quot;Subgroups&quot;.</preconds>
+										<steps>Click to &quot;+&quot; buttom. You see register form for the subgroup.
+Type the name (you can use сyrillic and latin alphabets, numbers or special characters no more than 100).
+Click to the drop-down &quot;Output&quot;. Choose the type: &quot;Exit&quot;.
+Select the number for subgroup (no more than 16).
+Leave the switcher &quot;Controllable&quot; in a left. 
+Leave the switcher &quot;Common&quot; in a left.
+Сlick &quot;Tick&quot; (✓).</steps>
+										<expected>The subgroup is created. You see the list of all subgroupos of this group. This subgroup doesn&apos;t have a switcher/slider.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1080</id>
+				<title>Adding new controlled subgroup &quot;Exit&quot; type</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>User has logged in. Open &quot;Main page&quot;. Сlick to the buttom &quot;Groups&quot;. Click on one group. Click on the buttom &quot;Subgroups&quot;.</preconds>
+										<steps>Click to &quot;+&quot; buttom. You see register form for the subgroup.
+Type the name (you can use сyrillic and latin alphabets, numbers or special characters no more than 100).
+Click to the drop-down &quot;Output&quot;. Choose the type: &quot;Exit&quot;.
+Select the number for subgroup (no more than 16).
+Move the switcher &quot;Controllable&quot;to the right. 
+Leave the switcher &quot;Common&quot; in a left.
+Сlick &quot;Tick&quot; (✓).</steps>
+										<expected>The subgroup is created. You see the list of all subgroupos of this group. This subgroup has a switcher/slider.</expected>
+									</custom>
+							</case>
+								</cases>
+								<sections>
+		<section>
+		<name>Settings</name>
+		<description></description>
+						
+		<cases>
+									
+						<case>
+				<id>C1081</id>
+				<title>Whether profile page is working or not</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>User has logged in. Open &quot;Main page&quot;. Сlick to the buttom &quot;Settings&quot;. Click &quot;Profile&quot;.
+</preconds>
+										<steps>1. Click to the phone number. Return back.
+2. Click to the email adress. Return back.</steps>
+										<expected>1. You are dealing this number.
+2. Your post messenger has opened for the new letter to this email.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1082</id>
+				<title>Editing profile page</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>User has logged in. Open &quot;Main page&quot;. Сlick to the buttom &quot;Settings&quot;. Click &quot;Profile&quot;. Click &quot;Edit&quot;</preconds>
+										<steps>1. Edit your name (you can use сyrillic and latin alphabets, numbers or special characters no more than 150).
+2. Edit your phone (no more than 13 symbols).
+3. Edit your email (latin alphabets &amp; &quot;@&quot;).
+4. Сlick &quot;Tick&quot; (✓).</steps>
+										<expected>You see your profile page with your new data.</expected>
+									</custom>
+							</case>
+								</cases>
+							</section>
+	</sections>
+			</section>
+	</sections>
+			</section>
+			<section>
+		<name>Chaban Описание экранов приложения</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Сплеш скрин</name>
+		<description></description>
+						
+		<cases>
+									
+						<case>
+				<id>C1083</id>
+				<title>Экран - приветствие, на фоне которого подгружаются библиотеки.</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>Экран входа в приложение</name>
+		<description></description>
+						
+		<cases>
+									
+						<case>
+				<id>C1123</id>
+				<title>На рисунке 1 изображен экран, который видит пользователь после сплеш экрана, когда все вспомогательные ресурсы загрузились</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1124</id>
+				<title>Пользователь уже зарегистрирован</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>1. Заполнить поле “username” рис. 1 (1)
+2. Заполнить поле “password” рис. 1 (2)
+3. Нажать на кнопку “sign in” рис. 1 (3)</steps>
+										<expected>Переход на главный экран</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1125</id>
+				<title>Пользователь не зарегистрирован</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>Нажать на кнопку “sign up” рис. 1 (5)</steps>
+										<expected>Переход на экран регистрации пользователя</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1126</id>
+				<title>Пользователь зарегистрирован, но забыл пароль</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>Нажать кнопку “forgot password” рис. 1 (4)</steps>
+										<expected>переход на экран восстановления пароля</expected>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>Экран регистрации пользователя</name>
+		<description></description>
+						
+		<cases>
+									
+						<case>
+				<id>C1127</id>
+				<title>⇦ рис. 2 (1) - возврат к экрану “Логин”.</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1128</id>
+				<title>Поле ввода “Name” рис. 2 (2)</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>!. Принимает любые символы (латиница, спец символы,цифры, кириллица)
+2. Максимальное количество символов 150
+3. Обязательно для заполнения.</steps>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1129</id>
+				<title>Поле ввода “Phone” рис. 2 (3)</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>1. Для ввода доступны только цифровая панель ввода. 
+2. Максимальное количество символов 13 обязательно для заполнения. 
+3. Может добавляться несколько полей:
+- если одно поле остается незаполненным - изменения сохраняются с одним номером. 
+- если два поля дублируют друг друга - сохраняется, но остается только один экземпляр. 
+4. Если пользователь пытается зарегистрировать уже зарегистрированный номер (две учетки на один номер) - показывается ошибка</steps>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1130</id>
+				<title>+” рис. 2 (4) - активные кнопки для добавления дополнительного почтового адреса либо телефона</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1131</id>
+				<title>Поле ввода “Email” рис. 2 (5)</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>1. Принимает только латинские символы, обязательный спец символ @. 
+2. Максимальное количество символов 150
+3. Обязательно для заполнения. 
+4. Может добавляться несколько полей:
+- если одно поле остается незаполненным - изменения сохраняются с одним Email-ом. 
+- если два поля дублируют друг друга - сохраняется, но остается только один экземпляр. 
+5. Если пользователь пытается зарегистрировать уже зарегистрированный Email (две учетки на один Email) - показывается ошибка.</steps>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1132</id>
+				<title>Поле ввода “Password” рис. 2 (6)</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>1. Принимает любые символы (латиница, спец символы,цифры, кириллица)
+2. Минимальное количество символов - 4, максимальное - 150
+3. Обязательно для заполнения. 
+4. Если пользователь пытается ввести больше 150 символов - строка обрезается.</steps>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1133</id>
+				<title>Чекбокс рис. 2 (7) - согласие на обработку введенных данных</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>Может принимать true или false (быть отмеченным или нет), для завершения регистрации должен быть true (отмеченным)</steps>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1134</id>
+				<title>Кнопка “Sign up”  рис. 2 (8)</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>Становится активной, когда все поля заполнены и чекбокс отмечен.  </steps>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>Экран восстановления пароля</name>
+		<description></description>
+						
+		<cases>
+									
+						<case>
+				<id>C1108</id>
+				<title>Восстановление пароля</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>1. Заполнить поле “email”
+2. Нажать на кнопку “submit”. 
+    После нажатия ему на почту приходит письмо с  кодом
+3. Вести код в Поле ввода кода 3.2 (2), который пришел пользователю на Email. 
+4. Вести в Поле ввода нового пароля 3.2 (3) (цифры, буквы, спец символы). Минимальное количество символов - 4.
+5. Нажать кнопку “Submit” 3.2 (4) 
+</steps>
+										<expected>После нажатия на кнопку пользователь подтверждает изменение пароля и в случае, если введенный код подтверждения совпадает с  тем, который пришел в  письме на почту - заходит на главный экран в учетную запись в приложении.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1109</id>
+				<title>Поле ввода кода 3.2 (2), который пришел пользователю на Email.</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>Если код невалидный/отличается от присланного в письме - поле должно выделиться цветом как неправильно заполненное поле</steps>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1110</id>
+				<title>Кнопка назад</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>При нажатии возвращает на страницу входа в  учетную запись
+</steps>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>Главный экран, когда не добавлено ни одной группы (Рис 11)</name>
+		<description></description>
+						
+		<cases>
+									
+						<case>
+				<id>C1102</id>
+				<title>11(1) При нажатии на кнопку пользователь открывает страницу настроек</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1103</id>
+				<title>11(2)При нажатии на кнопку пользователь открывает страницу приглашений</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1104</id>
+				<title>11(3)Навигационные табы</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>1. При нажатии на одну из иконок пользователь переходит с  одного экрана на другой. 
+2. Возможность перехода по экранам посредством свайпа недоступна. 
+3. Активная иконка активной табы выделяется цветом.</steps>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>Главный экран. Вкладка группы (Рис. 11.1)</name>
+		<description></description>
+						
+		<cases>
+									
+						<case>
+				<id>C1097</id>
+				<title>11.1(1) При нажатии на кнопку пользователь открывает страницу настроек</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1098</id>
+				<title>11.1(2)При нажатии на кнопку пользователь открывает страницу приглашений.</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1099</id>
+				<title>Рис 11.1(3) Фейковые группы</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>На плашке групп находится название группы, роль, которая у  пользователя в этой группе (в данном случае он админ), выход прибора( и сам , на который зарегистрирована группа и статус по прибору (под охраной/снят с  охраны)</steps>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1100</id>
+				<title>Рис 11.1(4) - кнопка добавления новой группы</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>Появляется:
+1. когда есть прибор
+2. когда пользователя добавили в  прибор и его роль позволяют ему редактировать группы,создавать их, роль админ
+3. когда в приборе есть свободные слоты.
+</steps>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1101</id>
+				<title>11(3)Навигационные табы</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>При нажатии на одну из иконок пользователь переходит с  одного экрана на другой. Возможность перехода по экранам посредством свайпа недоступна. Активная иконка активной табы выделяется цветом</steps>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>Экран добавление/изменение новой группы (Рис 11.1.1)</name>
+		<description></description>
+						
+		<cases>
+									
+						<case>
+				<id>C1084</id>
+				<title>Иконка “✓” рис 11.1.1(1) - при нажатии на кнопку происходит сохранение изменений и переход назад к странице групп</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1085</id>
+				<title>Иконка “×” рис 11.1.1 (2) - при нажатии на кнопку происходит закрытие окна и возврат к странице групп без сохранения введенной информации</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1086</id>
+				<title>Рис 11.1.1(3) - при нажатии на кнопку появляется выпадающий список всех устройств. Пользователь должен выбрать один из них</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1087</id>
+				<title>Поле ввода имени новой группы (Рис 11.1.1(4)</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>Поле принимает на вход латиницу и кириллицу, цифры, спец знаки</steps>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1088</id>
+				<title>Номер слота в приборе (Рис 11.1.1(5)</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>При нажатии на кнопку появляется выпадающий список с номерами свободных (на которых еще нет группы) слотов в приборе. Можно создать только одну группу на один слот</steps>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>Детальный экран группы.</name>
+		<description></description>
+						
+		<cases>
+									
+						<case>
+				<id>C1089</id>
+				<title>Рис 11.1.2(1) - при нажатии на кнопку открывается модальное окно</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>для подтверждения удаления группы и в случае положительного ответа группа удаляется. Кнопка на экране группы появляется  только тогда, когда роль пользователя позволяет совершать такие действия (админ, создатель)</steps>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1090</id>
+				<title>Рис 11.1.2(2) - при нажатии на кнопку открывается окно редактирования группы</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>Экран точно такой же как и при создании новой группы, единственная разница заключается в том, что когда пользователь открывает окно для редактирования - поля уже заполнены. Кнопка на экране группы появляется  только тогда, когда роль пользователя позволяет совершать такие действия (админ, создатель)</steps>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1091</id>
+				<title>Рис 11.1.2(3) - кнопка добавления пользователей в группу.</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>Кнопка на экране группы появляется  только тогда, когда роль пользователя позволяет совершать такие действия</steps>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1092</id>
+				<title>Рис 11.1.2(4) - геолокация прибора.</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1093</id>
+				<title>Рис 11.1.2(5) - при нажатии на переключатель можно поставить или снять с охраны</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>Принимает только два значения: под охраной, снят с охраны. Становится под охрану не моментально так как идет запрос к прибору и пока они там общаются нужно немного подождать.</steps>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1094</id>
+				<title>Рис 11.1.2(6) - при нажатии на переключатель можно включить или выключить сигнализацию</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>Принимает только два значения: под сигнализацией, снят с сигнализации. Становится под сигнализацию не моментально так как идет запрос к прибору и пока они там общаются нужно немного подождать</steps>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1095</id>
+				<title>Рис 11.1.2(7) - при нажатии на кнопку осуществляется переход на страницу подгрупп</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1096</id>
+				<title>Рис 11.1.2(8) - при нажатии на кнопку осуществляется переход на страницу пользователей этой группы</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>Страница всех подгрупп</name>
+		<description></description>
+						
+		<cases>
+									
+						<case>
+				<id>C1105</id>
+				<title>Подгруппа типа “ключ”. Носит информативный характер и присваивается к чему-либо (Рис 11.1.2.1(1)</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1106</id>
+				<title>Подгруппа типа “зона” (Рис 11.1.2.1(2)</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1107</id>
+				<title>Подгруппы типа “выход” (Рис 11.1.2.1(3.1-3.3)</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>Экран создания подгруппы</name>
+		<description></description>
+						
+		<cases>
+									
+						<case>
+				<id>C1118</id>
+				<title>Иконка “✓” рис 11.1.2.1.1(1) - при нажатии на кнопку происходит сохранение изменений и переход назад к странице группы см рис. 11.1.2.1.</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1119</id>
+				<title>Иконка “×” рис 11.1.2.1.1 (2) - при нажатии на кнопку происходит закрытие окна и возврат к странице группы рис 11.1.2.1 без сохранения введенной информации</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1120</id>
+				<title>Поле ввода имени новой подгруппы Рис 11.1.2.11.1(3).</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>Поле принимает на вход латиницу и кириллицу, цифры, спец знаки</steps>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1121</id>
+				<title>Рис 11.1.2.11.1(4) - при нажатии на кнопку появляется выпадающий список.</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>В нем можно выбрать тип подгруппы: зона, ключ, выход. В зоне и ключе экраны не отличаются</steps>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1122</id>
+				<title>Номер слота (подгруппы) (Рис 11.1.2.1.1(5)</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>Если это зона или выход, то подгрупп может быть 16, если ключ - 8.</steps>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>Экран создания подгруппы (тип выход)</name>
+		<description></description>
+						
+		<cases>
+									
+						<case>
+				<id>C1111</id>
+				<title>Иконка “✓” рис 11.1.2.1.2(1) - при нажатии на кнопку происходит сохранение изменений и переход назад к странице подгрупп</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1112</id>
+				<title>Иконка “×” рис 11.1.2.1.2 (2) - при нажатии на кнопку происходит закрытие окна и возврат к странице подгрупп без сохранения введенной информации</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1113</id>
+				<title>Поле ввода имени новой подгруппы (Рис 11.1.2.1.2(3)</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>Поле принимает на вход латиницу и кириллицу, цифры, спец знаки</steps>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1114</id>
+				<title>Рис 11.1.2.1.2(4) - при нажатии на кнопку появляется выпадающий список</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>В нем можно выбрать тип подгруппы: зона, ключ, выход. В зоне и ключе экраны не отличаются</steps>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1115</id>
+				<title>Номер слота (подгруппы) (Рис 11.1.2.1.2(5)</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>Если это зона или выход, то подгрупп может быть 16, если ключ - 8</steps>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1116</id>
+				<title>Переключатель (Рис 11.1.2.1.2(6)</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>При нажатии на переключатель можно делать подгруппу типа “выход” контролируемой или неконтролируемой. Контролируемая - пользователь может управлять чем-нибудь через прибор. Неконтролируемая - пользователь не может ничего делать, прибор управляет сам</steps>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1117</id>
+				<title>Переключатель (Рис 11.1.2.1.2(7)</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>При нажатии на переключатель можно делать подгруппу типа “выход” общей, то есть она может быть общей и присвоенной всем группам одновременно</steps>
+									</custom>
+							</case>
+								</cases>
+							</section>
+	</sections>
+			</section>
+			<section>
+		<name>Ruslan Sheremet</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Термины и определения</name>
+		<description></description>
+						
+		<cases>
+									
+						<case>
+				<id>C1172</id>
+				<title>Проверка назначения, порядка действия  датчиков, магнитных ключей, выходных устройств.</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Зона - датчики, которые можно подключить в  прибор (тревожные кнопки, датчики движения, затопления, разбития стекла и тд.)
+Выходы - прожекторы, пожарная тревога
+Ключи - магнитные. 
+</preconds>
+										<steps>1. Проверить срабатывание магнитных ключей на внешнее воздействие (механическое, вода, движение и т.д.).
+
+2. Проверить срабатывание датчика который подключен в приборы (тревожные кнопки, датчики движения, затопления, разбития стекла и тд.).
+
+3. Проверить срабатывание выходных устройств (прожекторов, пожарная тревога)</steps>
+										<expected>1. Загорается лампочка на датчике который подключен в приборы
+2. Срабатывает выходное устройство
+3. Получаем сигнал в виде звука, света и смс на телефон</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1173</id>
+				<title>Проверка получение прав доступа.</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Права доступа:
+Создатель - может делать все: создавать, добавлять, изменять, удалять, назначать роли другим.
+Администратор - может создавать группы, редактировать, добавлять удалять, назначать роли другим (модератор и только чтение).
+Модератор - может приглашать в группу людей.
+Только чтение - только просмотр.
+</preconds>
+										<steps>1. Проверить что изменять может только создатель
+
+2. Проверить что создавать может создатель, администратор.
+
+3. Проверить что добавлять удалять может создатель, администратор.
+
+4. Проверить что назначать роли другим может создатель, администратор только (модератору и пользователю).
+
+5. Проверить что приглашать в группу людей может создатель, администратор, модератор.
+
+6. Проверить что просмотр может осуществлять создатель, администратор, модератор, пользователь.</steps>
+										<expected>1. Изменять может только создатель
+2. Создавать может создатель, администратор.
+3. Добавлять удалять может создатель, администратор.
+4. Назначать роли другим может создатель, администратор только (модератору и пользователю)
+5. Приглашать в группу людей может создатель, администратор, модератор.
+6. Просмотр может осуществлять создатель, администратор, модератор, пользователь</expected>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>Общие положения</name>
+		<description></description>
+						
+		<cases>
+									
+						<case>
+				<id>C1139</id>
+				<title>Проверка назначения документа</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Техническая документация мобильного приложения “SIG” - документ, который дает полное как техническое так и функциональное описание мобильного приложения. Ниже представлена архитектура экранов (скринов) приложения с описанием всех элементов и принципом их работы (если это активные элементы). 
+</preconds>
+										<steps>1. Проверить техническую документацию мобильного приложения “SIG” на техническое так и функциональное описание мобильного приложения
+
+2. Проверить на полноту описания и принципов работы архитектуры экранов (скринов) приложения (если это  активные элементы).</steps>
+										<expected>1. Техническая документация мобильного приложения “SIG”  описаны технически и функционально достаточно полная.
+2. Полнота описания и принципов работы архитектуры экранов (скринов) приложения удовлетворяет требованиям.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1140</id>
+				<title>Проверить цели создания приложения</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Приложение создается для функционирования в паре с охранным прибором  SIG4. Приложение позволяет пользователю удаленно управлять прибором и подключенными к нему датчиками.
+</preconds>
+										<steps>1. Проверить что приложение функционирует в паре с охранным прибором  SIG4.
+
+2. Проверить что приложение позволяет пользователю удаленно управлять прибором и подключенными к нему датчиками.</steps>
+										<expected>1.Приложение функционирует в паре с охранным прибором  SIG4.
+2. Приложение позволяет пользователю удаленно управлять прибором и подключенными к нему датчиками.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1141</id>
+				<title>Проверка основных функциональных возможностей приложения.</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>При первом входе в приложение пользователя встречает туториал.
+Создавать/изменять/удалять прибор в приложение. Раздел “Устройства”
+Создавать/изменять/удалять на нем группы (максимум 4). Раздел “Группы”
+В группах можно создавать/изменять/удалять подгруппы (зона, вход, ключ). Раздел “Подгруппы”
+Добавлять/удалять пользователей в  группы, на которых распространяется право ставить/снимать с сигнализации и редактировать их роли.
+Смотреть события по добавленному прибору(рам) и фильтровать по: определенным периодам, приборам(если их несколько), группам (если их несколько). Фильтр по группам недоступен, пока не выбран прибор. На разных приборах могут быть группы с  одинаковым названием. Раздел “События”
+Мультиаккаунт. В приложении может быть несколько учетных записей. Одна учетная запись может использоваться на многих девайсах. 
+Можно выйти как с одного девайса с учетной записи так и из всех, где залогинина эта учетная запись. Массразлогин.
+</preconds>
+										<steps>1. Проверить чтобы при первом входе в приложение пользователя встречал туториал.
+
+2. Проверить приложение чтобы в разделе “Устройства” прибор можно создавать/изменять/удалять.
+
+3. Проверить приложение чтобы в разделе“Группы”можно создавать/изменять/удалять на нем группы (максимум 4).
+
+4. Проверить приложение чтобы в разделе “Подгруппы” в группах можно создавать/изменять/удалять подгруппы (зона, вход, ключ).
+
+5. Проверить приложение чтобы можно добавлять/удалять пользователей в  группы, на которых распространяется право ставить/снимать с сигнализации и редактировать их роли.
+
+6. Проверить приложение чтобы в разделе “События”смотреть события по добавленному прибору(рам) и фильтровать по: определенным периодам, приборам(если их несколько), группам (если их несколько). Фильтр по группам недоступен, пока не выбран прибор. На разных приборах могут быть группы с  одинаковым названием. 
+
+7. Проверить приложение чтобы в Мультиаккаунте  может быть несколько учетных записей (одна учетная запись может использоваться на многих девайсах). 
+
+8. Проверить приложение чтобы в Массразлогине можно выйти как с одного девайса с учетной записи так и из всех, где залогинина эта учетная запись.
+</steps>
+										<expected>1. При первом входе в приложение пользователя встречает туториал.
+2. Разделе “Устройства” прибор можно создавать/изменять/удалять.
+3. В разделе“Группы”можно создавать/изменять/удалять на нем группы (максимум 4).
+4. В разделе “Подгруппы” в группах можно создавать/изменять/удалять подгруппы (зона, вход, ключ).
+5. Можно добавлять/удалять пользователей в  группы, на которых распространяется право ставить/снимать с сигнализации и редактировать их роли.
+6. В разделе “События”смотреть события по добавленному прибору(рам) и фильтровать по: определенным периодам, приборам(если их несколько), группам (если их несколько). Фильтр по группам недоступен, пока не выбран прибор. На разных приборах могут быть группы с  одинаковым названием. 
+7. В Мультиаккаунте  может быть несколько учетных записей (одна учетная запись может использоваться на многих девайсах). 
+8. В Массразлогине можно выйти как с одного девайса с учетной записи так и из всех, где залогинина эта учетная запись.
+</expected>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>Описание экранов приложения</name>
+		<description></description>
+						
+		<cases>
+									
+						<case>
+				<id>C1142</id>
+				<title>Сплеш скрин</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Экран - приветствие, на фоне которого подгружаются библиотеки.</preconds>
+										<steps>1. Проверить чтобы на фоне экрана приветствия подгружаются библиотеки. </steps>
+										<expected>На фоне экрана приветствия подгружаются библиотеки. </expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1143</id>
+				<title>Проверка заполнения активных элементов экрана входа в приложение.</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>На рисунке 1 изображен экран, который видит пользователь после сплеш экрана, когда все вспомогательные ресурсы загрузились. 
+Если пользователь уже зарегистрирован ему нужно заполнить поля “username” и “password” рис. 1 (1, 2) и после совершить вход в приложение нажатием на кнопку “sign in” рис. 1 (3). Если пользователь не зарегистрирован, ему нужно создать свою учетную запись. Для этого нужно нажать на кнопку “sign up” рис. 1 (5) и перейти на экран регистрации пользователя см пункт 3.2.1. Если пользователь зарегистрирован, но забыл пароль, для его восстановления нужно нажать кнопку “forgot password” рис. 1 (4). При нажатии откроется модальное окно см. п. 3.2.2
+</preconds>
+										<steps>1. Проверить что бы на экране, который видит пользователь после сплеш экрана, все вспомогательные ресурсы загрузились.
+
+2. Проверить вариант при входе как зарегистрированный пользователь наличие заполнения поля “username” и “password”  и  нажать на кнопка “sign in”. 
+
+3. Проверить вариант при входе как не зарегистрированного пользователя ,  нужно проверить чтобы была создана своя учетная запись. Для этого нужно проверить чтобы нажималась  кнопка “sign up”  и осуществлялся переход на экран регистрации пользователя. 
+
+4. Проверить вариант если пользователь зарегистрирован, но забыл пароль, для его восстановления нужно нажать кнопку “forgot password”. При нажатии открывается модальное окно.</steps>
+										<expected>1. На экране, который видит пользователь после сплеш экрана, все вспомогательные ресурсы загружаются.
+
+2. При входе как зарегистрированный пользователь поля “username” и “password”  заполнены и кнопка “sign in” нажимается. 
+
+3. При входе как не зарегистрированный пользователь,   при создании своей учетной записи и нажатии кнопки “sign up”  осуществляется переход на экран регистрации пользователя. 
+
+4. При входе пользователя как  зарегистрированного, но забывшего пароль, при нажатии кнопки “forgot password”для восстановления пароля открывается модальное окно.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1144</id>
+				<title>Проверка активных элементов экрана регистрации пользователя</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>“username” рис. 1 (1)  - e-mail, с помощью которого пользователь регистрировался.
+“password” рис. 1 (2) - в поле нужно вводить пароль, который соответствует введенной учетной записи. Поле принимает на вход цифры, буквы (латиницу и кириллицу), спец символы. 
+Рис 1 (2.1) -  кнопка, при нажатии на которую, введенный пароль становится видимым.
+“sign in” рис. 1 (3) - переход по клику на главный экран.
+“sign up” рис. 1 (5) и перейти на экран регистрации пользователя.
+“forgot password” рис. 1 (4) - переход на экран восстановления пароля.
+
+</preconds>
+										<steps>1. Проверить поле “username” - e-mail.
+
+2. Проверить поле “password” - в поле нужно вводить пароль, который соответствует введенной учетной записи. Поле принимает на вход цифры, буквы (латиницу и кириллицу), спец символы. 
+
+3. Проверить что при нажатии на кнопку с изображением перечёркнутый глаз, введенный пароль становится видимым.
+
+4. Проверить что при нажатии на кнопку “sign in” - переход по клику на главный экран.
+
+5. Проверить что при нажатии на кнопку “sign up” - перейти на экран регистрации пользователя.
+
+6. Проверить что при нажатии на кнопку “forgot password”  - переход на экран восстановления пароля.</steps>
+										<expected>1. Поле “username” - e-mail доступно для ввода.
+
+2. Поле “password” -  доступно для ввода пароля, соответствующего введенной учетной записи. Поле принимает на вход цифры, буквы (латиницу и кириллицу), спец символы. 
+
+3. При нажатии на кнопку с изображением перечёркнутый глаз, введенный пароль становится видимым.
+
+4. При нажатии на кнопку “sign in” - осуществляется переход по клику на главный экран.
+
+5. При нажатии на кнопку “sign up” - осуществляется переход на экран регистрации пользователя.
+
+6. При нажатии на кнопку “forgot password”  - осуществляется переход на экран восстановления пароля.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1145</id>
+				<title>Проверка активных элементов экрана регистрации в приложении.</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>⇦ рис. 2 (1) - возврат к экрану “Логин”.
+Поле ввода “Name” рис. 2 (2) - может принимать любые символы (латиница, спец символы,цифры, кириллица),максимальное количество символов 150, обязательно для заполнения.
+Поле ввода “Phone” рис. 2 (3) - для ввода доступны только цифровая панель ввода. Максимальное количество символов 13 обязательно для заполнения. Может добавляться несколько полей. В случае если одно поле остается незаполненным - изменения сохраняются с одним номером. Если два поля дублируют друг друга - сохраняется, но остается только один экземпляр. Если пользователь пытается зарегистрировать уже зарегистрированный номер (две учетки на один номер) - показывается ошибка.
+“+” рис. 2 (4) - активные кнопки для добавления дополнительного почтового адреса либо телефона.
+Поле ввода “Email” рис. 2 (5) может принимать в себя только латинские символы, обязательный спец символ @. Максимальное количество символов 150, поле обязательно для заполнения. Может добавляться несколько полей. В случае если одно поле остается незаполненным - изменения сохраняются с одним Email-ом. Если два поля дублируют друг друга - сохраняется, но остается только один экземпляр. Если пользователь пытается зарегистрировать уже зарегистрированный Email (две учетки на один Email) - показывается ошибка.
+Поле ввода “Password” рис. 2 (6) - может принимать любые символы (латиница, спец символы,цифры, кириллица), минимальное количество символов - 4, максимальное - 150, обязательно для заполнения. Если пользователь пытается ввести больше 150 символов - строка обрезается. 
+Чекбокс рис. 2 (7) - согласие на обработку введенных данных. Может принимать true или false (быть отмеченным или нет), для завершения регистрации должен быть true (отмеченным).
+Кнопка “Sign up”  рис. 2 (8) - становится активной, когда все поля заполнены и чекбокс отмечен.  При нажатии на кнопку происходит регистрация пользователя в приложении и переход на главную страницу.
+</preconds>
+										<steps>1. Проверить возврат к экрану “Логин”.
+
+2. Проверить поле ввода “Name”  - может принимать любые символы (латиница, спец символы,цифры, кириллица),максимальное количество символов 150, обязательно для заполнения.
+
+3. Проверить поле ввода “Phone” - для ввода доступны только цифровая панель ввода. Максимальное количество символов 13 обязательно для заполнения. Проверить на добавление несколько полей. В случае если одно поле остается незаполненным - изменения сохраняются с одним номером. Если два поля дублируют друг друга - сохраняется, но остается только один экземпляр. Если пользователь пытается зарегистрировать уже зарегистрированный номер (две учетки на один номер) - показывается ошибка.
+
+4. Проверить - активные кнопки для добавления дополнительного почтового адреса либо телефона.
+
+5. Проверить поле ввода “Email” что оно может принимать в себя только латинские символы, обязательный спец символ @. Максимальное количество символов 150, поле обязательно для заполнения. Проверить на добавление нескольких полей. В случае если одно поле остается незаполненным - изменения сохраняются с одним Email-ом. Если два поля дублируют друг друга - сохраняется, но остается только один экземпляр. Проверить если пользователь пытается зарегистрировать уже зарегистрированный Email (две учетки на один Email) - показывается ошибка.
+
+6. Проверить поле ввода “Password” - может принимать любые символы (латиница, спец символы,цифры, кириллица), минимальное количество символов - 4, максимальное - 150, обязательно для заполнения. Если пользователь пытается ввести больше 150 символов - строка обрезается. 
+
+7. Проверить что чекбокс  - согласие на обработку введенных данных. Может принимать true или false (быть отмеченным или нет), для завершения регистрации должен быть true (отмеченным).
+
+8. Проверить кнопка  “Sign up”  - становится активной, когда все поля заполнены и чекбокс отмечен.  Проверить что при нажатии на кнопку происходит регистрация пользователя в приложении и переход на главную страницу.
+</steps>
+										<expected>1. Осуществляется возврат к экрану “Логин”.
+
+2. Поле ввода “Name”  -  принимает любые символы (латиница, спец символы,цифры, кириллица), максимальное количество символов 150, обязательно для заполнения.
+
+3. Поле ввода “Phone” - доступно только цифровая панель ввода. Максимальное количество символов 13 обязательно для заполнения. Добавляються несколько полей. В случае если одно поле остается незаполненным - изменения сохраняются с одним номером. Если два поля дублируют друг друга - сохраняется, но остается только один экземпляр. Если пользователь пытается зарегистрировать уже зарегистрированный номер (две учетки на один номер) - показывается ошибка.
+
+4. Кнопки активные  для добавления дополнительного почтового адреса либо телефона.
+
+5. Поле ввода “Email” может принимать в себя только латинские символы, обязательный спец символ @. Максимальное количество символов 150, поле обязательно для заполнения. Добавляется несколько полей. В случае если одно поле остается незаполненным - изменения сохраняются с одним Email-ом. Если два поля дублируют друг друга - сохраняется, но остается только один экземпляр. При попытке регистрации пользователя уже зарегистрированного Email (две учетки на один Email) - показывается ошибка.
+
+6. Поле ввода “Password” - принимает любые символы (латиница, спец символы,цифры, кириллица), минимальное количество символов - 4, максимальное - 150, обязательно для заполнения. При попытке пользователя ввести больше 150 символов - строка обрезается. 
+
+7. Чекбокс  - согласие на обработку введенных данных. Принимает true или false (быть отмеченным или нет), для завершения регистрации должен быть true (отмеченным).
+
+8. Кнопка  “Sign up”  - становится активной, когда все поля заполнены и чекбокс отмечен.  При нажатии на кнопку происходит регистрация пользователя в приложении и переход на главную страницу.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1146</id>
+				<title>Проверка активных элементов экрана восстановления пароля.</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Пользователь заполняет поле “email” и нажимает на кнопку “submit”. После нажатия ему на почту приходит письмо с  кодом, а  так же в  приложении становится доступным второй шаг восстановления пароля.
+Становится доступным поле ввода кода, который пользователь получил на введенную им почту. После ввода и нажатие на кнопку
+</preconds>
+										<steps>1. Проверить что заполняется поле “email” и   кнопка “submit” кликабельна. 
+2. Проверить что после нажатия кнопки “submit” на почту приходит письмо с  кодом, а  так же в  приложении становится доступным второй шаг восстановления пароля.
+3. Проверить что становится доступным поле ввода кода, который получаешь на введенную почту. После ввода и нажатия кнопки “submit”.
+</steps>
+										<expected>1. Поле “email” заполняется и кнопка “submit” кликабельна.
+2. При нажатии кнопки “submit” на почту приходит письмо с  кодом, а  так же в  приложении становится доступным второй шаг восстановления пароля.
+3. После ввода и нажатия кнопки “submit” при получении кода на введённую почту поле ввода поля становиться доступным</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1147</id>
+				<title>Проверка активных элементов экрана восстановления пароля 1 этап</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Поле ввода “Email” рис. 3.1 (1)  - поле обязательно для заполнения, максимальное количество символов - 150. На вход поле принимает еmail, на который регистрировалась учетная запись, пароль которой пользователь хочет восстановить.
+Кнопка “Submit” 3.1 (2) - после нажатия на кнопку пользователю высылается код на адрес введенной почты и становится доступный второй этап восстановления пароля.
+Кнопка назад. При нажатии возвращает на страницу входа в  учетную запись</preconds>
+										<steps>1. Проверить что поле ввода “Email”  - поле обязательно для заполнения, максимальное количество символов - 150. На входе поле принимает еmail, на который регистрировалась учетная запись, пароль который можно восстановить.
+
+2. Проверить что кнопка “Submit”  - после нажатия на кнопку высылается код на адрес введенной почты и становится доступный второй этап восстановления пароля.
+
+3. Проверить что кнопка назад. При нажатии возвращает на страницу входа в  учетную запись.</steps>
+										<expected>1. Поле ввода “Email”  - поле обязательно для заполнения, максимальное количество символов - 150. На входе поле принимает еmail, на который регистрируется учетная запись, пароль  восстанавливается.
+
+2. Проверить что после нажатия на кнопку “Submit”  -  высылается код на адрес введенной почты и становится доступный второй этап восстановления пароля.
+
+3. Кнопка назад. При нажатии возвращает на страницу входа в  учетную запись.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1148</id>
+				<title>Проверка активных элементов экрана восстановления пароля 2 этап</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Поле ввода “Email” рис. 3.2 (1)  - поле обязательно для заполнения, максимальное количество символов - 150. На вход поле принимает еmail, на который регистрировалась учетная запись, пароль которой пользователь хочет восстановить.
+Поле ввода кода 3.2 (2), который пришел пользователю на Email. Если код невалидный/отличается от присланного в письме - поле должно выделиться цветом как неправильно заполненное поле.
+Поле ввода нового пароля 3.2 (3) (цифры, буквы, спец символы). Минимальное количество символов - 4.
+Кнопка “Submit” 3.2 (4) - после нажатия на кнопку пользователь подтверждает изменение пароля и в случае, если введенный код подтверждения совпадает с  тем, который пришел в  письме на почту - заходит на главный экран в учетную запись в приложении.
+Кнопка назад. При нажатии возвращает на страницу входа в  учетную запись
+</preconds>
+										<steps>1. Проверить что поле ввода “Email” обязательно для заполнения, максимальное количество символов - 150. На вход поле принимает еmail, на который регистрировалась учетная запись, пароль который  восстанавливается.
+
+2. Проверить что поле ввода кода, который приходит на Email. Если код невалидный/отличается от присланного в письме - поле должно выделиться цветом как неправильно заполненное поле.
+
+3. Проверить что поле ввода нового пароля принимает (цифры, буквы, спец символы). Минимальное количество символов - 4.
+
+4. Проверить что после нажатия на кнопку “Submit”  - подтверждается изменение пароля и в случае, если введенный код подтверждения совпадает с  тем, который пришел в  письме на почту - заходит на главный экран в учетную запись в приложении.
+
+5. Проверить что при нажатии кнопки назад происходит возврат на страницу входа в  учетную запись.
+</steps>
+										<expected>1. Поле ввода “Email” обязательно для заполнения, максимальное количество символов - 150. На вход поле принимает еmail, на который регистрировалась учетная запись, пароль -  восстанавливается.
+
+2. Поле ввода кода, который приходит на Email. Если код невалидный/отличается от присланного в письме - поле выделяется цветом как неправильно заполненное поле.
+
+3. Поле ввода нового пароля принимает (цифры, буквы, спец символы). Минимальное количество символов - 4.
+
+4. После нажатия на кнопку “Submit”  - подтверждается изменение пароля и в случае, если введенный код подтверждения совпадает с  тем, который пришел в  письме на почту - заходит на главный экран в учетную запись в приложение.
+
+5. При нажатии кнопки назад происходит возврат на страницу входа в  учетную запись.</expected>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>Группы.</name>
+		<description>1. Экран добавление/изменение новой группы.
+2. Детальный экран группы.
+3. Страница всех подгрупп.
+4. Создание/изменение подгруппы.</description>
+						
+		<cases>
+									
+						<case>
+				<id>C1149</id>
+				<title>Проверка  активных элементов Главного экрана, когда не добавлено ни одной группы.</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>11(1) При нажатии на кнопку пользователь открывает страницу настроек.
+11(2)При нажатии на кнопку пользователь открывает страницу приглашений.
+11(3)Навигационные табы. При нажатии на одну из иконок пользователь переходит с  одного экрана на другой. Возможность перехода по экранам посредством свайпа недоступна. Активная иконка активной табы выделяется цветом.
+</preconds>
+										<steps>1. Проверить что при нажатии на кнопку с изображение силуэта человека открывается страница настроек.
+
+2. Проверить что при нажатии на кнопку с изображением шестерёнки открывается страница приглашений.
+
+3. Проверить что  при нажатии на одну из иконок навигационных таб осуществляется переход с  одного экрана на другой. А также возможность перехода по экранам посредством свайпа недоступна и активная иконка активной табы выделяется цветом.
+</steps>
+										<expected>1. При нажатии на кнопку с изображение силуэта человека открывается страница настроек.
+
+2. При нажатии на кнопку с изображением шестерёнки открывается страница приглашений.
+
+3. При нажатии на одну из иконок навигационных таб осуществляется переход с  одного экрана на другой. А также переход по экранам посредством свайпа недоступен. Активная иконка активной табы выделяется цветом.
+</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1150</id>
+				<title>Проверка активных элементов  главного экрана вкладки группы.</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>11.1(1) При нажатии на кнопку пользователь открывает страницу настроек.
+11.1(2)При нажатии на кнопку пользователь открывает страницу приглашений.
+Рис 11.1(3) Фейковые группы. На плашке групп находится название группы, роль, которая у  пользователя в этой группе (в данном случае он админ), выход прибора( и сам , на который зарегистрирована группа и статус по прибору (под охраной/снят с  охраны).
+Рис 11.1(4) - кнопка добавления новой группы. Появляется на экране:
+когда есть прибор
+когда пользователя добавили в  прибор и его роль позволяют ему редактировать группы,создавать их, роль админ
+когда в приборе есть свободные слоты.
+11(3)Навигационные табы. При нажатии на одну из иконок пользователь переходит с  одного экрана на другой. Возможность перехода по экранам посредством свайпа недоступна. Активная иконка активной табы выделяется цветом.
+</preconds>
+										<steps>1. Проверить что при нажатии на кнопку с изображением шестерёнки  открывает страницу настроек.
+
+2. Проверить что при нажатии на кнопку с изображением силуэта человека открывает страницу приглашений.
+
+3. Проверить что на плашке фейковые группы находится название группы, роль которой в этой группе (в данном случае он админ), выход прибора ( и сам , на который зарегистрирована группа и статус по прибору (под охраной/снят с  охраны).
+
+4. Проверить что - кнопка добавления новой группы. Появляется на экране: 
+а) когда есть прибор
+b) когда добавили в  прибор и его роль позволяют редактировать группы,создавать их, роль админ
+c) когда в приборе есть свободные слоты.
+
+5. Проверить что при нажатии на одну из иконок навигационных таб  осуществляется переход с  одного экрана на другой, а также возможность перехода по экранам посредством свайпа недоступна. Активная иконка активной табы выделяется цветом.
+</steps>
+										<expected>1. При нажатии на кнопку с изображением шестерёнки  открывается страница настроек.
+
+2. При нажатии на кнопку с изображением силуэта человека открывается страница приглашений.
+
+3. На плашке фейковые группы находится название группы, роль которой в этой группе (в данном случае он админ), выход прибора ( и сам , на который зарегистрирована группа и статус по прибору (под охраной/снят с  охраны).
+
+4. Кнопка добавления новой группы. Появляется на экране: 
+а) когда есть прибор
+b) когда добавили в  прибор и его роль позволяют редактировать группы,создавать их, роль админ
+c) когда в приборе есть свободные слоты.
+
+5. При нажатии на одну из иконок навигационных таб  осуществляется переход с  одного экрана на другой, а также осуществление перехода по экранам посредством свайпа недоступна. Активная иконка активной табы выделяется цветом.
+</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1151</id>
+				<title>Проверка активных элементов экрана добавления/изменения новой группы.</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Иконка “✓” рис 11.1.1(1) - при нажатии на кнопку происходит сохранение изменений и переход назад к странице групп. 
+Иконка “×” рис 11.1.1 (2) - при нажатии на кнопку происходит закрытие окна и возврат к странице групп без сохранения введенной информации.
+Рис 11.1.1(3) - при нажатии на кнопку появляется выпадающий список всех устройств. Пользователь должен выбрать один из них.
+Рис 11.1.1(4) - поле ввода имени новой группы. Поле принимает на вход латиницу и кириллицу, цифры, спец знаки. 
+Рис 11.1.1(5) - номер слота в приборе. При нажатии на кнопку появляется выпадающий список с номерами свободных (на которых еще нет группы) слотов в приборе. Можно создать только одну группу на один слот.
+
+</preconds>
+										<steps>1. Проверить что  при нажатии на кнопку иконка “✓”  - происходит сохранение изменений и переход назад к странице групп.
+ 
+2. Проверить что при нажатии на кнопку иконка “×”    происходит закрытие окна и возврат к странице групп без сохранения введенной информации.
+
+3. Проверить что  при нажатии на кнопку изображающую окно, появляется выпадающий список всех устройств. Проверить что один из списков должен быть выбран.
+
+4. Проверить что поле ввода имени новой группы принимает на вход латиницу и кириллицу, цифры, спец знаки.
+ 
+5. Проверить что при нажатии на кнопку номер слота в приборе, появляется выпадающий список с номерами свободных (на которых еще нет группы) слотов в приборе и можно создать только одну группу на один слот.
+
+</steps>
+										<expected>1. При нажатии на кнопку иконка “✓”  - происходит сохранение изменений и переход назад к странице групп.
+ 
+2. При нажатии на кнопку иконка “×”    происходит закрытие окна и возврат к странице групп без сохранения введенной информации.
+
+3. При нажатии на кнопку изображающую окно, появляется выпадающий список всех устройств и один из списков выбран.
+
+4. Поле ввода имени новой группы принимает на вход латиницу и кириллицу, цифры, спец знаки.
+ 
+5. При нажатии на кнопку номер слота в приборе, появляется выпадающий список с номерами свободных (на которых еще нет группы) слотов в приборе и создаётся только одна группа на один слот.
+
+</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1152</id>
+				<title>Проверка Активных элементов детального экрана группы.</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Рис 11.1.2(1) - при нажатии на кнопку открывается модальное окно для подтверждения удаления группы и в случае положительного ответа группа удаляется. Кнопка на экране группы появляется  только тогда, когда роль пользователя позволяет совершать такие действия (админ, создатель).
+Рис 11.1.2(2) - при нажатии на кнопку открывается окно редактирования группы. Экран точно такой же как и при создании новой группы, единственная разница заключается в том, что когда пользователь открывает окно для редактирования - поля уже заполнены. Кнопка на экране группы появляется  только тогда, когда роль пользователя позволяет совершать такие действия (админ, создатель).
+Рис 11.1.2(3) - кнопка добавления пользователей в группу. Экран выглядит так же как и в пункте 3.3.2.2. Кнопка на экране группы появляется  только тогда, когда роль пользователя позволяет совершать такие действия.
+Рис 11.1.2(4) - геолокация прибора.
+Рис 11.1.2(5) - при нажатии на переключатель можно поставить или снять с охраны. Принимает только два значения: под охраной, снят с охраны. Становится под охрану не моментально так как идет запрос к прибору и пока они там общаются нужно немного подождать.
+Рис 11.1.2(6) - при нажатии на переключатель можно включить или выключить сигнализацию. Принимает только два значения: под сигнализацией, снят с сигнализации. Становится под сигнализацию не моментально так как идет запрос к прибору и пока они там общаются нужно немного подождать.
+Рис 11.1.2(7) - при нажатии на кнопку осуществляется переход на страницу подгрупп.
+Рис 11.1.2(8) - при нажатии на кнопку осуществляется переход на страницу пользователей этой группы. Экран выглядит точно так же как в пункте 3.3.2.3.
+
+</preconds>
+										<steps>1. Проверить что  при нажатии на кнопку изображающую корзину  открывается модальное окно для подтверждения удаления группы и в случае положительного ответа  группа должна удалятся  и кнопка на экране группы появляется  только тогда, когда позволяет совершать такие действия роль (админ, создатель.) 
+
+2. Проверить что при нажатии на кнопку изображающую карандаш  открывается окно редактирования группы. Экран точно такой же как и при создании новой группы, единственная разница заключается в том, что когда открывается окно для редактирования - поля уже заполнены и кнопка на экране группы появляется  только тогда, когда даются права роль (админ, создатель).
+
+3. Проверить что кнопка добавления пользователей в группу кликабельна и кнопка на экране группы появляется  только тогда, когда роль позволяет совершать такие действия.
+
+4. Проверить что  геолокация прибора отражается корректно.
+
+5. Проверить что при нажатии на переключатель напротив изображения замка можно поставить или снять с охраны и принимает только два значения: под охраной, снят с охраны, а также становится под охрану не моментально (так как идет запрос к прибору и пока они там общаются нужно немного подождать).
+
+6. Проверить что при нажатии на переключатель напротив изображения колокольчика можно включить или выключить сигнализацию, принимает только два значения: под сигнализацией, снят с сигнализации и становится под сигнализацию не моментально (так как идет запрос к прибору и пока они там общаются нужно немного подождать).
+
+7. Проверить что при нажатии на кнопку с изображением развёрнутая книга осуществляется переход на страницу подгрупп.
+
+8. Проверить что при нажатии на кнопку с обезображением силуэтов людей осуществляется переход на страницу пользователей этой группы. 
+
+</steps>
+										<expected>1. При нажатии на кнопку изображающую корзину  открывается модальное окно для подтверждения удаления группы и в случае положительного ответа  группа  удалятся  и кнопка на экране группы появляется  только тогда, когда совершатся такие действия (админ, создатель.) 
+
+2. При нажатии на кнопку изображающую карандаш  открывается окно редактирования группы. Экран точно такой же как и при создании новой группы, единственная разница заключается в том, что когда открывается окно для редактирования - поля заполнены и кнопка на экране группы появляется  только тогда, когда даются права (админ, создатель).
+
+3. Кнопка добавления пользователей в группу кликабельна и кнопка на экране группы появляется  только тогда, когда права позволяют совершать такие действия.
+
+4. Геолокация прибора отражается корректно.
+
+5. При нажатии на переключатель напротив изображения замка, ставить или снять с охраны и принимает только два значения: под охраной, снят с охраны, а также становится под охрану не моментально (так как идет запрос к прибору и пока они там общаются нужно немного подождать).
+
+6. При нажатии на переключатель напротив изображения колокольчика - включить или выключить сигнализацию, принимает только два значения: под сигнализацией, снят с сигнализации и становится под сигнализацию не моментально (так как идет запрос к прибору и пока они там общаются нужно немного подождать).
+
+7. При нажатии на кнопку с изображением развёрнутая книга осуществляется переход на страницу подгрупп.
+
+8. При нажатии на кнопку с обезображением силуэтов людей осуществляется переход на страницу пользователей этой группы. 
+</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1153</id>
+				<title>Проверить активные элементы подгруппы разных типов.</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Рис 11.1.2.1(1) - подгруппа типа “ключ”. Носит информативный характер и присваивается к чему-либо.
+Рис 11.1.2.1(2) - подгруппа типа “зона”. 
+Рис 11.1.2.1(3.1-3.3) - подгруппы типа “выход”
+Рис 11.1.2.1(3.1) - контролируемая, общая подгруппа, отослан запрос на выключение.
+Рис 11.1.2.1(3.2) - неконтролируемая подгруппа.
+Рис 11.1.2.1(3.1) - контролируемая, общая подгруппа, выключена.
+</preconds>
+										<steps>1. Проверить что подгруппа типа “ключ”. Носит информативный характер и присваивается к чему-либо.
+
+2. Проверить что подгруппа типа “зона”. Носит информативный характер и присваивается к чему-либо.
+
+3. Проверить что подгруппы типа “выход”. Носит информативный характер.
+1) Проверить что контролируемая, общая подгруппа, отсылает запрос на выключение.
+2) Проверить что неконтролируемая подгруппа кликабельна.
+3) Проверить что контролируемая, общая подгруппа, выключена.
+</steps>
+										<expected>1. Подгруппа типа “ключ”. Носит информативный характер и присваивается к чему-либо.
+
+2. Подгруппа типа “зона”. Носит информативный характер и присваивается к чему-либо.
+
+3. Подгруппы типа “выход”. Носит информативный характер.
+1) Контролируемая, общая подгруппа, отсылает запрос на выключение.
+2) Неконтролируемая подгруппа кликабельна.
+3) Контролируемая, общая подгруппа, выключена.
+</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1154</id>
+				<title>Проверка активных элементов экрана создания подгруппы.</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Иконка “✓” рис 11.1.2.1.1(1) - при нажатии на кнопку происходит сохранение изменений и переход назад к странице группы см рис. 11.1.2.1.
+Иконка “×” рис 11.1.2.1.1 (2) - при нажатии на кнопку происходит закрытие окна и возврат к странице группы рис 11.1.2.1 без сохранения введенной информации.
+Рис 11.1.2.11.1(3) - поле ввода имени новой подгруппы. Поле принимает на вход латиницу и кириллицу, цифры, спец знаки. 
+Рис 11.1.2.11.1(4) - при нажатии на кнопку появляется выпадающий список. В нем можно выбрать тип подгруппы: зона, ключ, выход. В зоне и ключе экраны не отличаются.  
+Рис 11.1.2.1.1(5) - номер слота (подгруппы). Если это зона или выход, то подгрупп может быть 16, если ключ - 8.
+</preconds>
+										<steps>1. Проверить что при нажатии на кнопку иконка “✓” происходит сохранение изменений и переход назад к странице группы.
+
+2. Проверить что при нажатии на кнопку иконка “×”  происходит закрытие окна и возврат к странице группы  без сохранения введенной информации.
+
+3. Проверить что  поле ввода имени новой подгруппы принимает на вход латиницу и кириллицу, цифры, спец знаки. 
+
+4. Проверить что при нажатии на кнопку с изображением стрелки в правую сторону появляется выпадающий список. В нем можно выбираются тип подгруппы: зона, ключ, выход. В зоне и ключе экраны не отличаются. 
+ 
+5. Проверить что номер слота (подгруппы). Если это зона или выход, то подгрупп может быть 16, если ключ - 8.
+</steps>
+										<expected>1. При нажатии на кнопку иконка “✓” происходит сохранение изменений и переход назад к странице группы.
+
+2. При нажатии на кнопку иконка “×”  происходит закрытие окна и возврат к странице группы  без сохранения введенной информации.
+
+3. Поле ввода имени новой подгруппы принимает на вход латиницу и кириллицу, цифры, спец знаки. 
+
+4. При нажатии на кнопку с изображением стрелки в правую сторону появляется выпадающий список. В нем  выбираются тип подгруппы: зона, ключ, выход. В зоне и ключе экраны не отличаются. 
+ 
+5. Проверить что номер слота (подгруппы). Если это зона или выход, то подгрупп может быть 16, если ключ - 8.
+</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1155</id>
+				<title>Проверка активных элементов экрана создания подгруппы (тип выход).</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Иконка “✓” рис 11.1.2.1.2(1) - при нажатии на кнопку происходит сохранение изменений и переход назад к странице подгрупп.
+Иконка “×” рис 11.1.2.1.2 (2) - при нажатии на кнопку происходит закрытие окна и возврат к странице подгрупп без сохранения введенной информации.
+Рис 11.1.2.1.2(3) - поле ввода имени новой подгруппы. Поле принимает на вход латиницу и кириллицу, цифры, спец знаки. 
+Рис 11.1.2.1.2(4) - при нажатии на кнопку появляется выпадающий список. В нем можно выбрать тип подгруппы: зона, ключ, выход. В зоне и ключе экраны не отличаются. 
+Рис 11.1.2.1.2(5) - номер слота (подгруппы). Если это зона или выход, то подгрупп может быть 16, если ключ - 8.
+Рис 11.1.2.1.2(6) - переключатель. При нажатии на переключатель можно делать подгруппу типа “выход” контролируемой или неконтролируемой. Контролируемая - пользователь может управлять чем-нибудь через прибор. Неконтролируемая - пользователь не может ничего делать, прибор управляет сам.
+Рис 11.1.2.1.2(7) - переключатель. При нажатии на переключатель можно делать подгруппу типа “выход” общей, то есть она может быть общей и присвоенной всем группам одновременно.
+</preconds>
+										<steps>1. Проверить что при нажатии на кнопку иконка “✓”   происходит сохранение изменений и переход назад к странице подгрупп.
+
+2. Проверить что при нажатии на кнопку иконка “×”   происходит закрытие окна и возврат к странице подгрупп без сохранения введенной информации.
+
+3. Проверить что поле ввода имени новой подгруппы принимает на вход латиницу и кириллицу, цифры, спец знаки. 
+
+4. Проверить что при нажатии на кнопку с изображением стрелки в право появляется выпадающий список. В нем можно выбрать тип подгруппы: зона, ключ, выход. В зоне и ключе экраны не отличаются. 
+
+5. Проверить что номер слота (подгруппы). Если это зона или выход, то подгрупп может быть 16, если ключ - 8.
+
+6. Проверить что при нажатии на переключатель можно делать подгруппу типа “выход” контролируемой или неконтролируемой. Контролируемая - можно управлять чем-нибудь через прибор. Неконтролируемая - не может ничего делать, прибор управляет сам.
+
+7. Проверить что при нажатии на переключатель можно делать подгруппу типа “выход” общей, то есть она может быть общей и присвоенной всем группам одновременно.
+</steps>
+										<expected>1. При нажатии на кнопку иконка “✓”   происходит сохранение изменений и переход назад к странице подгрупп.
+
+2. При нажатии на кнопку иконка “×”   происходит закрытие окна и возврат к странице подгрупп без сохранения введенной информации.
+
+3. Поле ввода имени новой подгруппы принимает на вход латиницу и кириллицу, цифры, спец знаки. 
+
+4. При нажатии на кнопку с изображением стрелки в право появляется выпадающий список. В нем  выбирается тип подгруппы: зона, ключ, выход. В зоне и ключе экраны не отличаются. 
+
+5. Номер слота (подгруппы). Если это зона или выход, то подгрупп может быть 16, если ключ - 8.
+
+6. При нажатии на переключатель можно делать подгруппу типа “выход” контролируемой или неконтролируемой. Контролируемая - управляется чем-нибудь через прибор. Неконтролируемая - не может ничего делать, прибор управляет сам.
+
+7. При нажатии на переключатель делается подгруппа типа “выход” общей, то есть она может быть общей и присвоенной всем группам одновременно.</expected>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>События</name>
+		<description>Фильтрация событий</description>
+						
+		<cases>
+									
+						<case>
+				<id>C1135</id>
+				<title>Проверка активных элементов экрана событий.</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>11.2(2) При нажатии на кнопку открывается окно фильтрации событий.
+11.2(2)При нажатии на кнопку пользователь открывает страницу приглашений.
+11.2(3) При нажатии на кнопку пользователь открывает страницу настроек.
+Рис 11.2(4) - плашки с  информацией о состоянии прибора, о снятии/постановке под охрану, о времени события и о приборе, с  которого пришла информация. Если речь о снятии/постановке под охрану, тогда указывается еще человек, который совершил это действие.
+11.2(5)Навигационные табы. При нажатии на одну из иконок пользователь переходит с  одного экрана на другой. Возможность перехода по экранам посредством свайпа недоступна. Активная иконка активной табы выделяется цветом.
+</preconds>
+										<steps>1. Проверить что при нажатии на кнопку с изображением перевёрнутого треугольника открывается окно фильтрации событий.
+
+2. Проверить что при нажатии на кнопку с изображением силуэта человека  открывается страница приглашений.
+
+3. Проверить что при нажатии на кнопку с изображением шестерёнки открывается страница настроек.
+
+4. Проверить что отображается информация на плашке  о состоянии прибора, о снятии/постановке под охрану, о времени события и о приборе, с  которого пришла информация. Если речь о снятии/постановке под охрану, тогда указывается еще человек, который совершил это действие.
+
+5. Проверить что при нажатии на одну из иконок навигационные табы происходит переходит с  одного экрана на другой также  возможность перехода по экранам посредством свайпа недоступна и активная иконка активной табы выделяется цветом.
+</steps>
+										<expected>1. При нажатии на кнопку с изображением перевёрнутого треугольника открывается окно фильтрации событий.
+
+2. При нажатии на кнопку с изображением силуэта человека открывается страница приглашений.
+
+3. При нажатии на кнопку с изображением шестерёнки  открывается страница настроек.
+
+4. Отображается информация на плашке  о состоянии прибора, о снятии/постановке под охрану, о времени события и о приборе, с  которого пришла информация. Если речь о снятии/постановке под охрану, тогда указывается еще человек, который совершил это действие.
+
+5. При нажатии на одну из иконок навигационные табы происходит переходит с  одного экрана на другой,   перехода по экранам посредством свайпа недоступен и активная иконка активной табы выделяется цветом.
+</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1136</id>
+				<title>Проверка активных элементов экрана настройки фильтрации.</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Иконка “✓” рис 11.2.1(1) - при нажатии на кнопку происходит сохранение изменений и переход назад к странице событий.
+Иконка “×” рис 11.2.1 (2) - при нажатии на кнопку происходит закрытие окна и возврат к странице событий без сохранения введенной информации.
+Рис 11.2.1(3) - при нажатии на кнопку открывается модальное окно с календарем, в котором можно отметить начало и конец периода для  фильтрации.
+Рис 11.2.1(4) - чипс периода, за который выводятся записи событий. Если нажать на иконку крестика - период сбросится. Если чипсов несколько и они не влазят в строку - можно проскролить их в бок.
+Рис 11.2.1(5) - при нажатии на кнопку открывается модальное окно со списком доступных устройств для  фильтрации. 
+Рис 11.2.1(6) - чипс - серийный номер устройств. Если нажать на иконку крестика - фильтр сбросится и удалятся соответствующие группы. Если чипсов несколько и они не влазят в строку - можно проскролить их в бок.
+Рис 11.2.1(7) - при нажатии на кнопку открывается модальное окно со списком доступных групп для фильтрации. Недоступно для нажатия, если не выбран прибор. Если чипсов несколько и они не влазят в строку - можно проскролить их в бок. Если на приборе нет групп должно открываться модальное окно с предложением создать группу сейчас. 
+Рис 11.2.1(8) - название группы. Если нажать на иконку крестика - фильтр сбросится.
+</preconds>
+										<steps>1. Проверить что при нажатии на кнопку иконка “✓”   происходит сохранение изменений и переход назад к странице событий.
+
+2. Проверить что  при нажатии на кнопку иконка “×”  происходит закрытие окна и возврат к странице событий без сохранения введенной информации.
+
+3. Проверить что при нажатии на кнопку с изображением календаря открывается модальное окно с календарем, в котором можно отметить начало и конец периода для  фильтрации.
+
+4. Проверить что чипс периода, за который выводятся записи событий, при нажатии на иконку крестика - период сбросится. Если чипсов несколько и они не влазят в строку - можно проскролить их в бок.
+
+5. Проверить что при нажатии на кнопку с изображением окна открывается модальное окно со списком доступных устройств для  фильтрации. 
+
+6. Проверить чипс - серийный номер устройств при нажатии на иконку крестика - фильтр сбросится и удалятся соответствующие группы. Если чипсов несколько и они не влазят в строку - можно проскролить их в бок.
+
+7. Проверить что  при нажатии на кнопку с изображением дома открывается модальное окно со списком доступных групп для фильтрации, недоступно для нажатия, если не выбран прибор. Если чипсов несколько и они не влазят в строку - можно проскролить их в бок. Если на приборе нет групп должно открываться модальное окно с предложением создать группу сейчас.
+ 
+8. Проверить в название группы, что если нажать на иконку крестика - фильтр сбросится.
+</steps>
+										<expected>1. При нажатии на кнопку иконка “✓”   происходит сохранение изменений и переход назад к странице событий.
+
+2. При нажатии на кнопку иконка “×”  происходит закрытие окна и возврат к странице событий без сохранения введенной информации.
+
+3. При нажатии на кнопку с изображением календаря открывается модальное окно с календарем, в котором можно отметить начало и конец периода для  фильтрации.
+
+4. Чипс периода, за который выводятся записи событий, при нажатии на иконку крестика - период сбросится. Если чипсов несколько и они не влазят в строку - можно проскролить их в бок.
+
+5. При нажатии на кнопку с изображением окна открывается модальное окно со списком доступных устройств для  фильтрации. 
+
+6. Чипс - серийный номер устройств при нажатии на иконку крестика - фильтр сбросится и удалятся соответствующие группы. Если чипсов несколько и они не влазят в строку - можно проскролить их в бок.
+
+7. При нажатии на кнопку с изображением дома открывается модальное окно со списком доступных групп для фильтрации, недоступно для нажатия, если не выбран прибор. Если чипсов несколько и они не влазят в строку - можно проскролить их в бок. Если на приборе нет групп должно открываться модальное окно с предложением создать группу сейчас.
+ 
+8. В название группы, при нажатии на иконку крестика - фильтр сбросится.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1137</id>
+				<title>Проверка активных элементов экрана настройки фильтрации (календарь)  :</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Рис 11.2.1.1(1) -  при нажатии на любое число в календаре, отмечается цветом начало периода (можно выбрать любой день).
+Рис 11.2.1.1(2) - при нажатии на любое число в календаре, отмечается цветом весь период и конец периода (можно выбрать любой день).
+Рис 11.2.1.1(3) - при нажатии на кнопку сбрасывается модальное окно закрывается без сохранения изменений, если такие были.
+Рис 11.2.1.1(4) - при нажатии на кнопку происходит сохранение настроек фильтра и их применение.
+</preconds>
+										<steps>1. Проверить что  при нажатии на любое число в календаре, отмечается цветом начало периода (можно выбрать любой день).
+
+2. Проверить что при нажатии на любое число в календаре, отмечается цветом весь период и конец периода (можно выбрать любой день).
+
+3. Проверить что при нажатии на кнопку CANCEL сбрасывается модальное окно закрывается без сохранения изменений, если такие были.
+
+4. Проверить что при нажатии на кнопку SELECT происходит сохранение настроек фильтра и их применение.
+</steps>
+										<expected>1. При нажатии на любое число в календаре, отмечается цветом начало периода (можно выбрать любой день).
+
+2. При нажатии на любое число в календаре, отмечается цветом весь период и конец периода (можно выбрать любой день).
+
+3. При нажатии на кнопку CANCEL сбрасывается модальное окно закрывается без сохранения изменений, если такие были.
+
+4. При нажатии на кнопку SELECT происходит сохранение настроек фильтра и их применение.
+</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1138</id>
+				<title>Проверка активных элементов экрана настройки фильтрации (устройства, группы).</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Рис 11.2.1.2(1) - список доступных девайсов или групп, при нажатии на чекбокс он заполнятся иконкой галки. Можно выбрать несколько приборов или групп.
+Рис 11.2.1.2(2) - при нажатии на кнопку сбрасывается модальное окно закрывается без сохранения изменений, если такие были.
+Рис 11.2.1.2(3) - при нажатии на кнопку происходит сохранение настроек фильтра и их применение.
+
+</preconds>
+										<steps>1. Проверка что при нажатии на чекбокс список доступных девайсов или групп - заполнятся иконкой галки. Можно выбрать несколько приборов или групп.
+
+2. Проверка что при нажатии на кнопку CANCEL сбрасывается модальное окно закрывается без сохранения изменений, если такие были.
+
+3. Проверка что при нажатии на кнопку SELECT происходит сохранение настроек фильтра и их применение.
+
+</steps>
+										<expected>1. При нажатии на чекбокс список доступных девайсов или групп - заполнятся иконкой галки. Можно выбрать несколько приборов или групп.
+
+2. При нажатии на кнопку CANCEL сбрасывается модальное окно закрывается без сохранения изменений, если такие были.
+
+3. При нажатии на кнопку SELECT происходит сохранение настроек фильтра и их применение.
+</expected>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>Устройства</name>
+		<description>1. Экран устройства с выпадающим меню.
+2. Экран отправления приглашения пользователям.
+3. Экран добавленных пользователей.
+4. Экран добавления/редактирования нового устройства.</description>
+						
+		<cases>
+									
+						<case>
+				<id>C1156</id>
+				<title>Проверить активные элементы страница устройств.</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>⇦ рис. 8 (1) - возврат к главной странице.
+Название прибора рис 8 (2).
+Рис 8(3) - иконка батареи показывает есть аккумулятор или нет. Может быть в таких состояниях: без аккумулятора и с аккумулятором.
+Рис 8(4) - иконка подключения к питанию. Может быть в таких состояниях: прибор подключен к розетке, не подключен к розетке
+Рис 8(5) - иконка сирены. Отображает включена сирена или нет. Может быть в  двух состояниях: включена, не включена.
+Рис 8(6) - иконка оповещения. Отображает целостность прибора. Может быть в двух состояниях: вскрыт, не вскрыт.
+Рис 8(7) - иконка отображает есть ли связь с сервером или она потеряна. Может быть в двух состояниях: есть связи, утеряна связь.
+Рис 8(8) - иконка сети. Может быть в трех состояниях : нет информации о сети (как на картинке), нет сети, есть сеть (если она есть, то показывается ее уровень).
+Рис 8(9) - роль, которая у пользователя на этом приборе. Может быть 4 роли: создатель, админ, модератор и только чтение. 
+Создатель - может раздавать и забирать роли, добавять и удалять участников, изменять и удалять группы. 
+админ - может раздавать и забирать роли (не может только с админами), добавлять участников, изменять и удалять группы.
+модератор -  добавлять группы
+чтение - только просмотр.
+ Рис 8(10) - иконка контекстного меню. При нажатии выпадает меню дополнительных возможностей.
+ Рис 8(11) - при нажатии на кнопку открывается экран добавления нового прибора.
+
+</preconds>
+										<steps>1. Проверить что при нажатии на кнопку с изображением шестерёнки -возврат к главной странице.
+
+2. Проверить строка показывает название прибора рис 8 (2).
+
+3. Проверить что иконка батареи показывает есть аккумулятор или нет. Может быть в таких состояниях: без аккумулятора и с аккумулятором.
+
+4. Проверить что иконка подключения к питанию. Может быть в таких состояниях: прибор подключен к розетке, не подключен к розетке
+
+5. Проверить что иконка сирены. Отображает включена сирена или нет. Может быть в  двух состояниях: включена, не включена.
+
+6. Проверить что иконка оповещения. Отображает целостность прибора. Может быть в двух состояниях: вскрыт, не вскрыт.
+
+7. Проверить что иконка отображает есть ли связь с сервером или она потеряна. Может быть в двух состояниях: есть связи, утеряна связь.
+
+8. Проверить что иконка сети. Может быть в трех состояниях : нет информации о сети (как на картинке), нет сети, есть сеть (если она есть, то показывается ее уровень).
+
+9. Проверить что  роль, которая у пользователя на этом приборе. Может быть 4 роли: создатель, админ, модератор и только чтение. 
+a). создатель - может раздавать и забирать роли, добавять и удалять участников, изменять и удалять группы. 
+b) админ - может раздавать и забирать роли (не может только с админами), добавлять участников, изменять и удалять группы.
+c) модератор -  добавлять группы.
+d) чтение - только просмотр.
+
+ 10. Проверить что при нажатии иконки контекстного меню выпадает меню дополнительных возможностей.
+
+ 11. Проверить что при нажатии на кнопку с изображением жёлтого круга с крестиком открывается экран добавления нового прибора.
+
+</steps>
+										<expected>1. При нажатии на кнопку с изображением шестерёнки -возврат к главной странице.
+
+2. строка показывает название прибора рис 8 (2).
+
+3. Иконка батареи показывает есть аккумулятор или нет. Может быть в таких состояниях: без аккумулятора и с аккумулятором.
+
+4. Иконка подключения к питанию. Может быть в таких состояниях: прибор подключен к розетке, не подключен к розетке
+
+5. Иконка сирены. Отображает включена сирена или нет. Может быть в  двух состояниях: включена, не включена.
+
+6. Иконка оповещения. Отображает целостность прибора. Может быть в двух состояниях: вскрыт, не вскрыт.
+
+7. Иконка отображает есть ли связь с сервером или она потеряна. Может быть в двух состояниях: есть связи, утеряна связь.
+
+8. Иконка сети. Может быть в трех состояниях : нет информации о сети (как на картинке), нет сети, есть сеть (если она есть, то показывается ее уровень).
+
+9. На этом приборе может быть 4 роли: создатель, админ, модератор и только чтение. 
+a). создатель - может раздавать и забирать роли, добавять и удалять участников, изменять и удалять группы. 
+b) админ - может раздавать и забирать роли (не может только с админами), добавлять участников, изменять и удалять группы.
+c) модератор -  добавлять группы.
+d) чтение - только просмотр.
+
+ 10. При нажатии иконки контекстного меню выпадает меню дополнительных возможностей.
+
+ 11. При нажатии на кнопку с изображением жёлтого круга с крестиком открывается экран добавления нового прибора.
+</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1157</id>
+				<title>Проверка активных элементов страницы устройств. Выпадающее меню.</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Кнопка “Invite new users”  рис 8.1(1) - при нажатии на кнопку осуществляется переход на новый экран, в котором можно добавить пользователя, если роль пользователя это позволяет.
+Кнопка “Users” рис 8.1(2) - при нажатии на кнопку осуществляется переход на новый экран всех пользователей, которые добавлены в прибор.
+
+</preconds>
+										<steps>1. Проверить что при нажатии на кнопку “Invite new users” -  осуществляется переход на новый экран, в котором можно добавить пользователя, если роль пользователя это позволяет.
+
+2. Проверить что при нажатии на кнопку “Users”  -  осуществляется переход на новый экран всех пользователей, которые добавлены в прибор.
+
+</steps>
+										<expected>1. При нажатии на кнопку “Invite new users” -  осуществляется переход на новый экран, в котором можно добавить пользователя, если роль пользователя это позволяет.
+
+2. При нажатии на кнопку “Users”  -  осуществляется переход на новый экран всех пользователей, которые добавлены в прибор.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1158</id>
+				<title>Проверка  активных элементов страницы отправления приглашения пользователям.</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Поле ввода рис 8.1.1 (1) - поле принимает на вход цифры, латинские символы, спец. символы. Для корректной работы нужно ввести телефон или емейл зарегистрированного пользователя. 
+Кнопка “Save” рис 8.1.1(2) - при нажатии на кнопку осуществляется добавление пользователя. 
+Иконка “✓” рис 8.1.1(1) - при нажатии на кнопку происходит сохранение изменений и переход назад к странице устройств см рис. 8.</preconds>
+										<steps>1. Проверить что поле ввода принимает на вход цифры, латинские символы, спец. символы. Для корректной работы нужно ввести телефон или емейл зарегистрированного пользователя. 
+
+2. Проверить что при нажатии на кнопку “Save”   осуществляется добавление пользователя. 
+
+3. Проверить что при нажатии на кнопку иконка “✓”  происходит сохранение изменений и переход назад к странице устройств.</steps>
+										<expected>1. Поле ввода принимает на вход цифры, латинские символы, спец. символы. Для корректной работы  вводится  телефон или емейл зарегистрированного пользователя. 
+
+2. При нажатии на кнопку “Save”   осуществляется добавление пользователя. 
+
+3. При нажатии на кнопку иконка “✓”  происходит сохранение изменений и переход назад к странице устройств.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1159</id>
+				<title>Проверка активных элементов страницы добавленных юзеров.</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Рис 8.1.2 (1) - при нажатии на юзера  осуществляется переход на детальную страницу профиля см п. 3.4.1. 
+</preconds>
+										<steps>1. Проверить что при нажатии на юзера  осуществляется переход на детальную страницу профиля. 
+</steps>
+										<expected> При нажатии на юзера  осуществляется переход на детальную страницу профиля. 
+</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1160</id>
+				<title>Проверка активных элементов если роль пользователя соответствующая (админ или создатель) появляется возможность редактировать роли юзеров в списке.</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Рис 8.1.3(1) - кнопка удаления. При нажатии на кнопку открывается модальное окно с подтверждением действительно ли нужно удалить пользователя. Если да, тогда пользователь удаляется из списка.
+Рис 8.1.3(2) - иконка редактирования. При нажатии на кнопку открывается модальное окно со списком ролей, которые можно присвоить (поменять роль) выбранному юзеру.
+Рис 8.1.3(3) - указывается роль юзеров.
+</preconds>
+										<steps>1. Проверить что при нажатии на кнопку удаления  открывается модальное окно с подтверждением действительно ли нужно удалить пользователя. Если да, тогда пользователь удаляется из списка.
+
+2. Проверить что  при нажатии на кнопку иконку редактирования открывается модальное окно со списком ролей, которые можно присвоить (поменять роль) выбранному юзеру.
+
+3. Проверить что - указывается роль юзеров рис 8.1.3(3).
+</steps>
+										<expected>1. При нажатии на кнопку удаления  открывается модальное окно с подтверждением действительно ли нужно удалить пользователя. Если да, тогда пользователь удаляется из списка.
+
+2. При нажатии на кнопку иконку редактирования открывается модальное окно со списком ролей, которые можно присвоить (поменять роль) выбранному юзеру.
+
+3. Указывается роль юзеров рис 8.1.3(3).
+</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1161</id>
+				<title>Проверка активных элементов страницы устройств рис. 8.2.</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Если потянуть карточку прибора в направлении стрелки (1) на рис. 8.2 - появятся иконки управления прибором см. рис 8.2(2, 3).
+Иконка рис 8.2(2) - при нажатии на иконку удаляется выбранное устройство.
+Иконка рис 8.2(3) - при нажатии на иконку открывается окно добавления/редактирования IMEI устройства..
+</preconds>
+										<steps>1. Проверить что если потянуть карточку прибора в направлении стрелки (1) на рис. 8.2 - появятся иконки управления прибором см. рис 8.2(2, 3).
+
+2. Проверить что если при нажатии на иконку рис 8.2(2) -  удаляется выбранное устройство.
+Иконка рис 8.2(3) - при нажатии на иконку открывается окно добавления/редактирования IMEI устройства..
+</steps>
+										<expected>1. При протяжке карточки прибора в направлении стрелки (1) на рис. 8.2 - появятся иконки управления прибором см. рис 8.2(2, 3).
+
+2. При нажатии на иконку рис 8.2(2) -  удаляется выбранное устройство.
+Иконка рис 8.2(3) - при нажатии на иконку открывается окно добавления/редактирования IMEI устройства..</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1162</id>
+				<title>Проверка  активных элементов страницы добавления/редактирования устройства  рис. 8.3.</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Поле ввода “IMEI” рис 8.3(1) - ввод серийного номера прибора на вход принимаются цифры и латинские символы. Если это экран редактирования номера устройства, тогда по умолчанию поле заполнено тем, что пользователь ввел ранее.
+Иконка “✓” рис 8.3(2) - при нажатии на кнопку происходит сохранение изменений и переход назад к странице устройств.
+Иконка “×” рис 8.3(3) - при нажатии на кнопку происходит закрытие окна и возврат к странице устройств без сохранения введенной информации.
+</preconds>
+										<steps>1. Проверить что поле ввода “IMEI” рис 8.3(1) - ввод серийного номера прибора на вход принимаются цифры и латинские символы. Если это экран редактирования номера устройства, тогда по умолчанию поле заполнено тем, что пользователь ввел ранее.
+
+2. Проверить что при нажатии на кнопку иконка “✓” рис 8.3(2) происходит сохранение изменений и переход назад к странице устройств.
+
+3. Проверить что  при нажатии на кнопку Иконка “×” рис 8.3(3) происходит закрытие окна и возврат к странице устройств без сохранения введенной информации.
+</steps>
+										<expected>1. Поле ввода “IMEI” рис 8.3(1) - ввод серийного номера прибора на вход принимаются цифры и латинские символы. Если это экран редактирования номера устройства, тогда по умолчанию поле заполнено тем, что пользователь ввел ранее.
+
+2. При нажатии на кнопку иконка “✓” рис 8.3(2) происходит сохранение изменений и переход назад к странице устройств.
+
+3. При нажатии на кнопку иконка “×” рис 8.3(3) происходит закрытие окна и возврат к странице устройств без сохранения введенной информации.</expected>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>Приглашения</name>
+		<description></description>
+						
+		<cases>
+									
+						<case>
+				<id>C1163</id>
+				<title>Проверка активных элементов экрана приглашений рис 9.</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Иконка “✓” рис 9 (2) - при нажатии на кнопку пользователь принимает приглашение в группу прибора и добавляется в список людей, которые могут им управлять в зависимости от установленной им роли создателем.
+Иконка “×” рис 9 (1) - при нажатии на кнопку происходит отмена добавления пользователя в группу прибора.
+Выпадающее меню рис. 9 (3) - при нажатии выпадает список фильтрации, по которому можно отфильтровать приглашения на “входящие” и “исходящие”. По дефолту стоит фильтр на “все” (то есть и входящие и исходящие.
+Статус приглашения рис 9 (4) - может быть в трех состояниях: принятая, отправленная и отклоненная. Если у заявки состояние отправленная - на карточке приглашения появляются 2 кнопки см рис 9 (1, 2).
+</preconds>
+										<steps>1. Проверить что при нажатии на кнопку иконка “✓” рис 9 (2)   принимаем приглашение в группу прибора и добавляемый в список людей, которые могут нами  управлять в зависимости от установленной  роли создателем.
+
+2. Проверить что при нажатии на кнопку иконка “×” рис 9 (1)  происходит отмена добавления  в группу прибора.
+
+3. Проверить что при нажатии выпадающего меню рис. 9 (3)  выпадает список фильтрации, по которому можно отфильтровать приглашения на “входящие” и “исходящие”. По дефолту стоит фильтр на “все” (то есть и входящие и исходящие.
+
+4. Проверить что статус приглашения рис 9 (4) - может быть в трех состояниях: принятая, отправленная и отклоненная. Если у заявки состояние отправленная - на карточке приглашения появляются 2 кнопки см рис 9 (1, 2).
+</steps>
+										<expected>1. При нажатии на кнопку иконка “✓” рис 9 (2)   принимаем приглашение в группу прибора и добавляемый в список людей, которые могут нами  управлять в зависимости от установленной  роли создателем.
+
+2. При нажатии на кнопку иконка “×” рис 9 (1)  происходит отмена добавления  в группу прибора.
+
+3. При нажатии выпадающего меню рис. 9 (3)  выпадает список фильтрации, по которому можно отфильтровать приглашения на “входящие” и “исходящие”. По дефолту стоит фильтр на “все” (то есть и входящие и исходящие.
+
+4. Статус приглашения рис 9 (4) -  в трех состояниях: принятая, отправленная и отклоненная. Если у заявки состояние отправленная - на карточке приглашения появляются 2 кнопки см рис 9 (1, 2).
+</expected>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>Настройки</name>
+		<description>1. Профиль.
+2. Редактирование профиля.
+3. Экран добавления дополнительного аккаунта.
+4. Экран смены пароля.
+5. Экран выбора сценария после выхода учетки со всех девайсов.
+6. Экран подтверждения пароля.</description>
+						
+		<cases>
+									
+						<case>
+				<id>C1164</id>
+				<title>Проверка активных элементов  экрана настройки приложения рис. 5.</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Профайл рис. 5 (1) - при нажатии осуществляется переход на страницу информации о текущей учетной записи.
+Аккаунты 5(2) -  при нажатии осуществляется переход на страницу списка аккаунтов.
+Кнопка “Logout” рис. 5 (3) - при нажатии на кнопку  выполняется выход из учетной записи и приложения.
+Изменить пароль 5(4) -  при нажатии осуществляется переход на страницу смены пароля от учетной записи.
+Разлогинится из всех девайсов 5(5) -  при нажатии открывается модальное окно с подтверждением.
+6,7,8 - переход на информативные экраны.
+</preconds>
+										<steps>1. Проверить что при нажатии на профайл рис. 5 (1)  осуществляется переход на страницу информации о текущей учетной записи.
+
+2. Проверить что при нажатии на аккаунты рис. 5(2) -   осуществляется переход на страницу списка аккаунтов.
+
+3. Проверить что при нажатии на кнопку “Logout” рис. 5 (3)   выполняется выход из учетной записи и приложения.
+
+4. Проверить что при нажатии изменить пароль рис. 5(4) осуществляется переход на страницу смены пароля от учетной записи.
+
+5. Проверить что при нажатии Разлогинится из всех девайсов рис.5(5) открывается модальное окно с подтверждением.
+
+6. Проверить что происходит переход-  на информативные экраны рис. 6 ,7,8 .
+</steps>
+										<expected>1. При нажатии на профайл рис. 5 (1)  осуществляется переход на страницу информации о текущей учетной записи.
+
+2. При нажатии на аккаунты рис. 5(2) -   осуществляется переход на страницу списка аккаунтов.
+
+3. При нажатии на кнопку “Logout” рис. 5 (3)   выполняется выход из учетной записи и приложения.
+
+4. При нажатии изменить пароль рис. 5(4) осуществляется переход на страницу смены пароля от учетной записи.
+
+5. Проверить что при нажатии Разлогинится из всех девайсов рис.5(5) открывается модальное окно с подтверждением.
+
+6. Происходит переход-  на информативные экраны рис. 6 ,7,8 .</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1165</id>
+				<title>Проверка активных элементов страницы профиля Рис. 6.  :</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>⇦ рис. 6 (1) - возврат к меню.
+Иконка рис 6(2) - при нажатии на иконку открывается окно редактирования профиля.
+Рис. 6 (3) - имя пользователя.
+Рис. 6 (4) -  при нажатии на номер телефона есть возможность позвонить пользователю. Телефон должен вмещаться в одну строку.
+Рис. 6 (5) -  при нажатии на email пользователя, открывается почтовый менеджер для составления нового письма.
+</preconds>
+										<steps>1. Проверить что происходит при нажатии кнопки рис. 6 (1) - возврат к меню.
+
+2. Проверить что при нажатии на иконку  рис 6(2) -  открывается окно редактирования профиля.
+
+3. Проверить что заполняется Рис. 6 (3) - имя пользователя.
+
+4. Проверить что  -  при нажатии на номер телефона Рис. 6 (4) есть возможность позвонить пользователю. Телефон должен вмещаться в одну строку.
+
+5. Проверить что при нажатии на email пользователя Рис. 6 (5) , открывается почтовый менеджер для составления нового письма.
+</steps>
+										<expected>1. При нажатии кнопки рис. 6 (1) - возврат к меню.
+
+2. При нажатии на иконку  рис 6(2) -  открывается окно редактирования профиля.
+
+3. Заполняется Рис. 6 (3) - имя пользователя.
+
+4. При нажатии на номер телефона Рис. 6 (4) есть возможность позвонить пользователю. Телефон вмещаться в одну строку.
+
+5. При нажатии на email пользователя Рис. 6 (5) , открывается почтовый менеджер для составления нового письма.
+</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1166</id>
+				<title>Проверка активных элементов редактирование страницы профиля рис. 7.</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Иконка “×” рис 7(2) - при нажатии на кнопку происходит закрытие окна и возврат к странице профиля без сохранения изменений..
+Иконка “✓” рис 7(1) - при нажатии на кнопку происходит сохранение измененных данных, закрытие окна и возврат к странице профиля.
+Поле ввода “Name” рис 7(3) - отображает текущее имя пользователя, которое можно отредактировать или написать другое. Максимальное количество символов 150, допускается введение спец. символов, латиницы и кириллицы.
+Поле ввода “Phone” рис. 7(4) - отображает текущий номер телефона пользователя, который можно отредактировать или написать другой. Для ввода доступна только цифровая клавиатура. Максимальное количество символов 13. Может добавляться несколько полей. В случае если одно поле остается незаполненным - изменения сохраняются с одним номером. Если два поля дублируют друг друга - сохраняется, но остается только один экземпляр. Если пользователь пытается зарегистрировать уже зарегистрированный номер (две учетки на один номер) - показывается ошибка.
+Поле ввода “Email” рис. 7(5) - отображает текущий email пользователя, который можно отредактировать или написать другой. Для ввода доступны латинские символы, спец. символы, цифры. Максимальное количество символов 150. В случае если одно поле остается незаполненным - изменения сохраняются с одним email-ом. Если два поля дублируют друг друга - сохраняется, но остается только один экземпляр. Если пользователь пытается зарегистрировать уже зарегистрированный email (две учетки на один email) - показывается ошибка.
+
+
+“+” рис. 2 (4) - активные кнопки для добавления дополнительного почтового адреса либо телефона.
+</preconds>
+										<steps>1. Проверить что при нажатии на кнопку иконка “×” рис 7(2) происходит закрытие окна и возврат к странице профиля без сохранения изменений..
+
+2. Проверить что при нажатии на кнопку иконка “✓” рис 7(1) происходит сохранение измененных данных, закрытие окна и возврат к странице профиля.
+
+3. Проверить что поле ввода “Name” рис 7(3)  отображает текущее имя пользователя, которое можно отредактировать или написать другое. Максимальное количество символов 150, допускается введение спец. символов, латиницы и кириллицы.
+
+4. Проверить что поле ввода “Phone” рис. 7(4) - отображает текущий номер телефона пользователя, который можно отредактировать или написать другой. Для ввода доступна только цифровая клавиатура. Максимальное количество символов 13. добавляться несколько полей. В случае если одно поле остается незаполненным - изменения сохраняются с одним номером. Если два поля дублируют друг друга - сохраняется, но остается только один экземпляр. Если пользователь пытается зарегистрировать уже зарегистрированный номер (две учетки на один номер) - показывается ошибка.
+
+5. Проверить что поле ввода “Email” рис. 7(5) - отображает текущий email пользователя, который можно отредактировать или написать другой. Для ввода доступны латинские символы, спец. символы, цифры. Максимальное количество символов 150. В случае если одно поле остается незаполненным - изменения сохраняются с одним email-ом. Если два поля дублируют друг друга - сохраняется, но остается только один экземпляр. Если пользователь пытается зарегистрировать уже зарегистрированный email (две учетки на один email) - показывается ошибка.
+
+
+6. Проверить что кнопка “+” рис. 2 (4) - активна для добавления дополнительного почтового адреса либо телефона.
+</steps>
+										<expected>1. Ппри нажатии на кнопку иконка “×” рис 7(2) происходит закрытие окна и возврат к странице профиля без сохранения изменений..
+
+2. При нажатии на кнопку иконка “✓” рис 7(1) происходит сохранение измененных данных, закрытие окна и возврат к странице профиля.
+
+3. Поле ввода “Name” рис 7(3)  отображает текущее имя пользователя, которое можно отредактировать или написать другое. Максимальное количество символов 150, допускается введение спец. символов, латиницы и кириллицы.
+
+4. Поле ввода “Phone” рис. 7(4) - отображает текущий номер телефона пользователя, который можно отредактировать или написать другой. Для ввода доступна только цифровая клавиатура. Максимальное количество символов 13. добавляться несколько полей. В случае если одно поле остается незаполненным - изменения сохраняются с одним номером. Если два поля дублируют друг друга - сохраняется, но остается только один экземпляр. Если пользователь пытается зарегистрировать уже зарегистрированный номер (две учетки на один номер) - показывается ошибка.
+
+5. Поле ввода “Email” рис. 7(5) - отображает текущий email пользователя, который можно отредактировать или написать другой. Для ввода доступны латинские символы, спец. символы, цифры. Максимальное количество символов 150. В случае если одно поле остается незаполненным - изменения сохраняются с одним email-ом. Если два поля дублируют друг друга - сохраняется, но остается только один экземпляр. Если пользователь пытается зарегистрировать уже зарегистрированный email (две учетки на один email) - показывается ошибка.
+
+
+6. Кнопка “+” рис. 2 (4) - активна для добавления дополнительного почтового адреса либо телефона.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1167</id>
+				<title>Проверка активные элементов  списка учетных записей Рис. 13 :</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Учетные записи, которые уже добавлены в приложение. При нажатии на учетную запись осуществляется переход на этот аккаунт и открывается главный экран.
+Текущая учетная запись, на которой находится пользователь.
+При нажатии на кнопку осуществляется переход на экран логина. У пользователя появляется возможность либо зайти уже с  существующей учетной записью либо создать новую. В этом случае на экране также появляется стрелочка назад.
+</preconds>
+										<steps>1. Проверить что при нажатии на учетные записи, которые уже добавлены в приложение,  осуществляется переход на этот аккаунт и открывается главный экран.
+
+2. Проверить текущую учетная запись, на которой находится пользователь рис. 13.
+
+3. Проверить что при нажатии на кнопку осуществляется переход на экран логина появляется возможность либо зайти уже с  существующей учетной записью либо создать новую. В этом случае на экране также появляется стрелочка назад рис. 13.
+</steps>
+										<expected>1. При нажатии на учетные записи, которые уже добавлены в приложение,  осуществляется переход на этот аккаунт и открывается главный экран рис.13. 
+
+2. Существует текущую учетная запись, на которой находится пользователь рис. 13.
+
+3. При нажатии на кнопку осуществляется переход на экран логина появляется возможность либо зайти уже с  существующей учетной записью либо создать новую. В этом случае на экране также появляется стрелочка назад рис. 13.
+</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1168</id>
+				<title>Проверка активных элементов  экрана изменения пароля Рис 10.1.</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Иконка “✓” рис 10.1(1) - при нажатии на кнопку происходит сохранение изменений и переход назад к странице настроек.
+Иконка “×” рис 10.1 (2) - при нажатии на кнопку происходит закрытие окна и возврат к странице настроек без сохранения введенной информации.
+Поле ввода старый пароль рис 10.1(3) - нужно ввести текущий пароль от учетной записи. 
+Поле ввода новый пароль рис 10.1(4) - нужно ввести новый пароль от учетной записи. Поле на вход принимает  латинские символы, кириллицу, цифры и   спец. символы.
+</preconds>
+										<steps>1. Проверить что при нажатии на кнопку иконка “✓” рис 10.1(1)  происходит сохранение изменений и переход назад к странице настроек.
+
+2. Проверить что при нажатии на кнопку иконка “×” рис 10.1 (2)  происходит закрытие окна и возврат к странице настроек без сохранения введенной информации.
+
+3. Проверить что можно ввести текущий пароль в поле ввода старый пароль  от учетной записирис 10.1(3). 
+
+4. Проверить что поле ввода можно ввести новый пароль от учетной записи новый пароль рис 10.1(4). Поле на вход принимает  латинские символы, кириллицу, цифры и   спец. символы.
+</steps>
+										<expected>1. При нажатии на кнопку иконка “✓” рис 10.1(1)  происходит сохранение изменений и переход назад к странице настроек.
+
+2. При нажатии на кнопку иконка “×” рис 10.1 (2)  происходит закрытие окна и возврат к странице настроек без сохранения введенной информации.
+
+3. Вводится текущий пароль в поле ввода старый пароль  от учетной записирис 10.1(3). 
+
+4. Вводится  новый пароль от учетной записи новый пароль рис 10.1(4). Поле на вход принимает  латинские символы, кириллицу, цифры и   спец. символы.
+</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1169</id>
+				<title>Проверка экрана выбора сценария после выхода учетки со всех девайсов.</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Следующая залогининая учетка на главном экране.
+Если все учетки вылогинены, тогда появляется модальное окно 10.2, который позволяет либо выбрать из списка в  какую учетку войти либо создать новую.
+Зачем эта функция? - Если кто-то посторонний получил доступ к телефону и учетной записи - с другого телефона таким образом его можно вылогинить. В дальнейшем нужно будет вводить подтверждение для этого.
+
+</preconds>
+										<steps>1. Проверить что следующая залогининая учетка на главном экране.
+
+2. Проверить что если все учетки вылогинены, тогда появляется модальное окно 10.2, которое позволяет либо выбрать из списка в  какую учетку войти либо создать новую.
+
+Зачем эта функция? - Если кто-то посторонний получил доступ к телефону и учетной записи - с другого телефона таким образом его можно вылогинить. В дальнейшем нужно будет вводить подтверждение для этого.
+
+</steps>
+										<expected>1. Следующая залогининая учетка на главном экране.
+
+2. Все учетки вылогинены, появляется модальное окно 10.2, которое позволяет либо выбрать из списка в  какую учетку войти либо создать новую.
+</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1170</id>
+				<title>Проверка активных элементов  экрана выбора сценария после выхода из всех учетных записей Рис 10.2.</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Рис 10.2(1) - список зарегистрированных учетных записей и доступных для входа в приложение. При нажатии на кнопку осуществляется переход на страницу входа в приложение.
+Рис 10.2(2) -  кнопка создания новой учетной записи. При нажатии осуществляется переход на страницу создания новой учетной записи.
+</preconds>
+										<steps>1. Проверить что при нажатии на кнопку - список зарегистрированных учетных записей и доступных для входа в приложение,  осуществляется переход на страницу входа в приложение Рис 10.2(1).
+
+2. Проверить что при нажатии на кнопку создания новой учетной записи,  осуществляется переход на страницу создания новой учетной записи Рис 10.2(2).
+</steps>
+										<expected>1. При нажатии на кнопку - список зарегистрированных учетных записей и доступных для входа в приложение,  осуществляется переход на страницу входа в приложение Рис 10.2(1).
+
+2. При нажатии на кнопку создания новой учетной записи,  осуществляется переход на страницу создания новой учетной записи Рис 10.2(2).
+</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1171</id>
+				<title>Проверка активных элементов экрана входа в аккаунт после разлогина из всех учетных записей Рис 10.2.1.</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Рис  10.2.1 (1) - учетная запись, которую пользователь выбрал из списка на рис 10.2. Поле невозможно изменить. 
+Рис  10.2.1 (2) - Поле ввода пароля. Нужно ввести пароль, который соответствует введенной учетной записи. 
+Рис 10.2.1(2.1) - при нажатии на кнопку введенный пароль становится доступным для просмотра.
+Рис 10.2.1(3) - кнопка входа в приложение. При нажатии на нее осуществляется проверка введенных данных и (при положительном результате) переход на главную страницу приложения.
+Рис 10.2.1(4) -  при нажатии на кнопку происходит открытие модального окна для восстановления пароля.
+Примечание: в отличии от обычного экрана входа в приложение, на этом экране отсутствует кнопка, отвечающая за возможность создать новый аккаунт. </preconds>
+										<steps>1. Проверить что  в поле невозможно изменить учетную запись рис  10.2.1 (1), которую пользователь выбрал из списка на рис 10.2.
+
+2. Проверить что  нужно ввести пароль в поле ввода пароля, который соответствует введенной учетной записи рис 10.2.1 (2). 
+
+3. Проверить что  введенный пароль становится доступным для просмотра при нажатии на кнопку рис.10.2.1(2.1) .
+
+4. Проверить что при нажатии на кнопку входа в приложение осуществляется проверка введенных данных и (при положительном результате) переход на главную страницу приложения рис 10.2.1(3).
+
+5. Проверить что  при нажатии на кнопку происходит открытие модального окна для восстановления пароля рис 10.2.1(4).
+
+Примечание: в отличии от обычного экрана входа в приложение, на этом экране отсутствует кнопка, отвечающая за возможность создать новый аккаунт. </steps>
+										<expected>1. В поле невозможно изменить учетную запись рис  10.2.1 (1), которую пользователь выбрал из списка на рис 10.2.
+
+2. При ввода пароля введён пароль, который соответствует введенной учетной записи рис 10.2.1 (2). 
+
+3. Введенный пароль становится доступным для просмотра при нажатии на кнопку рис.10.2.1(2.1) .
+
+4. При нажатии на кнопку входа в приложение осуществляется проверка введенных данных и (при положительном результате) переход на главную страницу приложения рис 10.2.1(3).
+
+5. При нажатии на кнопку происходит открытие модального окна для восстановления пароля рис 10.2.1(4).</expected>
+									</custom>
+							</case>
+								</cases>
+							</section>
+	</sections>
+			</section>
+	</sections>
+</suite>

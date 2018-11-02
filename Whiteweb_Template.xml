@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite>
+	<id>S19</id>
+	<name>WhiteWeb Template New</name>
+	<description></description>
+	<sections>
+		<section>
+		<name>root</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Common</name>
+		<description></description>
+						
+		<cases>
+									
+						<case>
+				<id>C1016</id>
+				<title>Favicon присутствует и он корректный</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate>60</estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+								</cases>
+								<sections>
+		<section>
+		<name>Стандарты</name>
+		<description></description>
+						
+		<cases>
+									
+						<case>
+				<id>C1021</id>
+				<title>Нет ошибок html - https://validator.w3.org/</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate>300</estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>- Копируем/вставляем тестовый линк в валидатор - https://validator.w3.org/
+- Анализирем ошибки</steps>
+										<expected>HTML не должен содержать ошибок/предупреждений</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1022</id>
+				<title>Нет ошибок css - https://jigsaw.w3.org/css-validator/</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate>300</estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>- Копируем/вставляем тестовый линк в валидатор - https://jigsaw.w3.org/css-validator/
+- Анализирем ошибки</steps>
+										<expected>в CSS обращаем внимание только на синтаксические ошибки</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1023</id>
+				<title>Не должно быть JavaScript-ошибок</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate>120</estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>Проверяем отсутствие ошибок в консоли разработчика</steps>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1029</id>
+				<title>Отсутстсуют 404-х запросы</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate>180</estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>Проверяем отсутствие 404-х запросов в консоли разработчика / Network</steps>
+									</custom>
+							</case>
+								</cases>
+							</section>
+	</sections>
+			</section>
+			<section>
+		<name>Контент</name>
+		<description></description>
+						
+		<cases>
+									
+						<case>
+				<id>C1017</id>
+				<title>Расположение блоков должно быть 1:1 по сравнению с макетом</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate>1800</estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1018</id>
+				<title>Отсутствуют видимые глазу проблемы: поломанные блоки, не состыковки цвета и т.п.</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate>1200</estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1025</id>
+				<title>Кликаются ли кликабильные элементы (ссылки/кнопки)</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate>360</estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1026</id>
+				<title>Устанавливается ли фокус в поля форм</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate>180</estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1027</id>
+				<title>Кликабильные элементы должны иметь указатель &quot;курсор&quot;, перетаскивающиеся - &quot;лапка&quot; или &quot;ресайз&quot;, активные/недоступные - курсор default</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate>240</estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1028</id>
+				<title>Кликабильные элементы, назначение которых не очевидно должны быть снабжены подсказками (title)</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate>240</estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1031</id>
+				<title>Нормально ли подсвечиваются поля в фокусе</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate>180</estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1032</id>
+				<title>Нормально ли подсвечиваются поля с ошибками</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate>180</estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1034</id>
+				<title>Проверить что все анимации элементов страницы отрабатывают согласно ТЗ</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate>480</estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1035</id>
+				<title>Все текста не должны обрезаться и содержать ошибок</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate>480</estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1036</id>
+				<title>При смене размера страницы текста автоматически подстраиваются и всегда видны</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate>600</estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>Адаптивность</name>
+		<description></description>
+						
+		<cases>
+									
+						<case>
+				<id>C1024</id>
+				<title>Увеличиваем/уменьшаем к-во контента для блоков где это может произойти (текстовые блоки, меню, списки чего-либо и т.п.)</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate>1800</estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>Проверяется: на странице с контентом, пробуем добавлять и удалять содержимое – «что будет когда текста много?», «а когда мало?». Обязательно пробовать менять расположение элементов, чтоб после того как ты поменял блоки местами не развалилось оформление.
+
+Объем текста всегда подставляем разный и проверяем
+Меняем Заголовки
+Изображения тоже подставляем разного формата и размера и смотрим корректно ли они себя ведут</steps>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1019</id>
+				<title>Проверяем масштабирование страницы. В масштабах 75-150% страница должна выглядеть без визуальных проблем</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate>300</estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1030</id>
+				<title>Не должна появляться горизонтальная прокрутка для оговоренных в ТЗ разрешениях</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate>120</estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C1033</id>
+				<title>Проверка корректности отображения всех элементов при смене размеров окна (Фоны растягиваются под ширину экрана, а контент подстраивается)</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate>240</estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+								</cases>
+							</section>
+	</sections>
+			</section>
+	</sections>
+</suite>
